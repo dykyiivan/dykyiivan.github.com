@@ -33,6 +33,12 @@
   font-size: 2em;
   display: block;
 }
+@media (max-width: 480px) {
+  .fa-2x {
+    display: inline-block;
+    padding-right: 10px;
+  }
+}
 .fa-3x {
   font-size: 3em;
 }

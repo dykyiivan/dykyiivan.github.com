@@ -120,7 +120,7 @@ header {
 }
 
 .nav-btn:hover {
-	background-color: green;  /*Поставив тимчасово, щоб краще виділялось*/
+	background-color: #372B40;
 }
 
 .nav-btn:hover ul.menu {
@@ -173,8 +173,8 @@ header {
 @media (max-width: 680px) {
 	.get-started-wrapper {
 		left: 22%;
-		position: relative;
-		top: 660px;
+		position: absolute;
+		top: 680px;
 		width: 203px;
 	}
 }
