@@ -14,7 +14,9 @@ body {
 /* Clearfix */
 form:after,
 .register:after,
-.login:after {
+.login:after,
+.row:after,
+ {
 	clear: both;
 	content: "";
 	display: table;
@@ -48,18 +50,18 @@ form {
 }
 
 .login {
-	max-width: 360px;
-    position: relative;
+    box-sizing: border-box;
     float: left;
-    padding-right: 60px;
-    width: 100%;
+    padding: 0 25px;
+    position: relative;
+    width: 50%;
 }
 
 @media (max-width: 805px) {
 	.login {
-		max-width: 100%;
-		float: none;
-		padding-right: 0;
+		float: none;	 	
+		width: 100%;
+		padding-bottom: 140px;
 	}
 }
 
@@ -70,9 +72,9 @@ form {
     display: table;
     height: 340px;
     position: absolute;
-    right: 27px;
+    right: 0;
     top: 30px;
-    width: 3px;
+    width: 1px;
 }
 
 @media (max-width: 805px) {
@@ -82,32 +84,41 @@ form {
 }
 
 /* Input login and password */
+.form-input {
+   margin-bottom: 32px;
+}
+
+
 .user-name-login,
 .user-password-login {
-	background: #0199b3;
-	border-radius: 10px;
-	border: 1px solid #0191aa;
 	box-sizing: border-box;
-	/*color: #fff;*/
-	margin-bottom: 32px;
 	outline: none;
 	padding: 20px 30px;
 	width: 100%;
 }
 
+
+.user-name-login,
+.user-password-login,
+.email-register,
+.user-name-register,
+.user-password-register {
+	background: #0199b3;
+	border-radius: 10px;
+	border: 1px solid #0191aa;
+}
+
+
 input::-webkit-input-placeholder { 
 	color:#fff; 
-	font-size: 18px;
 }
 
 input:-moz-placeholder {
 	color:#fff; 
-	font-size: 18px;
 }
 
 input:-ms-input-placeholder {
 	color:#fff; 
-	font-size: 18px;
 }
 
 /* Border */
@@ -115,7 +126,6 @@ input:-ms-input-placeholder {
     background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAY8AAAADCAYAAABrn4PwAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4BpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo4RjJENjdDRTU5RDJFMjExODY3MkQ4MzU5MTUwRjFEMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpBNTU3QzA2QzM1RkUxMUU1QjhFREE1ODI4QzAzNDdGMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpBNTU3QzA2QjM1RkUxMUU1QjhFREE1ODI4QzAzNDdGMyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxNSAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpmZDc5ZjQ2Mi02YmE0LWM4NDAtYTE0Yy04YmNhNTIwMTdmMDQiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDplMTZiYzI2Mi0zNTRjLTExZTUtYjg1Ni05ZDY0MjExY2UxMjQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5sIN4sAAABgElEQVR42uxXW3KDMAy05Byp979DD8AR+tePFBxvedhBsxGFdDotTfAMY+vhXUmWGRAA4Rj+eHl9e9bUpX9A8jG218uz7z3+Z4xF/qA/ZKc53I0jTdOcNgDJBr21qeMnxibOXl3Q6YLOrvmpOUXjGw1WpNiiwY/Ex/HZ3E6lKSLlpZSrkk4dP3Vq5MUx6ntSkdszqXgwDcs42dgGfxgnLXrepysvRy24lv+eiyML8QZnrzj5WV41eQaqaaD6MK+HyTXwzkWplyyGYD5fmP7ifgH1njpx3vSBqY+a/PlssJCjHfmLOw6qHZ+7xwWnZ0BcmfSdkXN5YGaUfh3kS5HrnIotGX0qczZzxWoLefWrezrejyDjul9UjFR4Uo0FM3/lyHmObdAPPuO6g4xyKUDGZL/Wa5IF2an7B64CUpDcGo9Lv6cbeDHaUJLr1xNnMngtnc07prY5w7/nZ8iNXo4/j13/eax90f701wtW5GP876/67/bBo9dLHoBPfhvjU4ABACWuvSUVp5RwAAAAAElFTkSuQmCC) no-repeat center;
     height: 3px;
     margin: 50px 0;
-    max-width: 345px;
     position: relative;
     width: 100%;
 }
@@ -129,8 +139,10 @@ input:-ms-input-placeholder {
 /* Checkbox */
 .checkbox-label {
 	color: #006476;
-	font-size: 14px;
+	font-size: 13px;
 	padding-left: 5px;
+    float: left;
+    margin-top: 12px;
 }
 
 .checkbox:not(checked) {
@@ -164,7 +176,7 @@ input:-ms-input-placeholder {
 	border-radius: 10px;
 	border: none;
 	float: right;
-	font-size: 20px;
+	font-size: 19px;
 	outline: none;
 	padding: 10px 50px;
 }
@@ -172,27 +184,25 @@ input:-ms-input-placeholder {
 @media (max-width: 460px) {
 	.login-btn {
 		display: block;
-		float: none;
 		margin-top: 20px;
 	}
 }
  
 /* Register block */
 .register {
-    float: left;
-    margin: 70px 0;
-    max-width: 355px;
-    position: relative;
-    top: -94px;
-    width: 100%;
+	box-sizing: border-box;
+	float: left;
+	margin: 70px 0;
+	padding: 0 25px;
+	position: relative;
+	top: -94px;
+	width: 50%;
 }
 
 @media (max-width: 805px) {
 	.register {
-		max-width: 100%;
 		float: none;
-		padding-right: 0;
-		position: static;
+		width: 100%;
 	}
 }
 
@@ -200,22 +210,22 @@ input:-ms-input-placeholder {
 .user-name-register-label,
 .user-password-register-label {
 	display: block;
+	padding-bottom: 10px;
+}
+
+.form-input-register {
+	margin-bottom: 25px;
 }
 
 .email-register,
 .user-name-register,
 .user-password-register {
-	background: #0289a1;
-	border-radius: 10px;
-	border: none;
-	float: right;
 	font-size: 21px;
 	height: 50px;
 	outline: none;
 	padding: 0 30px;
 	width: 100%;
     box-sizing: border-box;
-    margin: 10px 0 25px 0;
 }
 
 .register-btn {
@@ -223,6 +233,7 @@ input:-ms-input-placeholder {
 	border-radius: 10px;
 	border: none;
 	float: right;
-	font-size: 20px;
+	font-size: 19px;
 	padding: 10px 38px;
+	outline: none;
 }
