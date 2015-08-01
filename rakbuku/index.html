@@ -14,12 +14,12 @@
 <body>
 	<header id="header">
 		<div class="header-bg">
+			<div class="global-nav-wrapper">
+				<a href="#" class="nav-btn"  id="touch-menu"><i class="fa fa-bars fa-lg"></i></a>
+			</div>
 			<div class="wrapper">
 			<div class="logo">
 				<a href="index.html"><img src="images/logo.png" alt="Логотип"></a>
-			</div>
-			<div class="global-nav-wrapper">
-				<a href="#" class="nav-btn"  id="touch-menu"><i class="fa fa-bars fa-lg"></i></a>
 			</div>
 				<ul class="menu">
 					<li><a href="index.html"><i class="fa fa-home fa-2x"></i>Home</a></li>
@@ -30,7 +30,7 @@
 				</ul>
 			<div class="get-started-wrapper">
 				<h3>We've got what you need!</h3>
-				<a href="#" class="get-started">Get Started<img src="images/more-btn.png" class="get-started-btn" alt="Get started button"></a>
+				<a href="#" class="get-started">Get Started<i class="fa fa-angle-double-right"></i></a>
 			</div>	
 			<article class="header">
 				<h3>Introduction</h3>
@@ -132,35 +132,39 @@
 				<div class="row">
 				<div class="work-item">
 					<div class="work-item-bg">
-						<a href="#">
-							<img src="images/img-1.jpg" alt="Img-1" class="img-work">
-						</a>
+						<div class="img-wrapper">
+							<a href="#">
+								<img src="images/img-1.jpg" alt="Img-1" class="img-work">
+							</a>
+						</div>
 						<p class="work-name">Lorem Ipsum Dolor</p>
 						<p class="work-type">Web Design</p>
 					</div>
 				</div>
 				<div class="work-item">
 					<div class="work-item-bg">
-						<a href="#">
-							<img src="images/img-2.jpg" alt="Img-2" class="img-work">
-						</a>
+						<div class="img-wrapper">
+							<a href="#">
+								<img src="images/img-2.jpg" alt="Img-2" class="img-work">
+							</a>
+						</div>
 						<p class="work-name">Lorem Ipsum Dolor</p>
 						<p class="work-type">Web Design</p>
 					</div>
 				</div>
 				<div class="work-item">
 				<div class="work-item-bg">
+					<div class="img-wrapper">
 						<a href="#">
 							<img src="images/img-3.jpg" alt="Img-3" class="img-work">
 						</a>
+					</div>
 						<p class="work-name">Lorem Ipsum Dolor</p>
 						<p class="work-type">Web Design</p>
 					</div>
 				</div>
-				<div class="load-more-wrapper">
-					<a href="#" class="load-more">Load More<img src="images/more-btn.png" class="load-more-btn" alt="Get started button"></a>
-				</div>
 			</div>	
+			<a href="#" class="load-more">Load More<i class="fa fa-angle-double-right"></i></a>
 		</div>
 	</section>
 	<section id="contact-form" class="contact-form">
@@ -170,15 +174,17 @@
 				<p>Lorem ipsum dolor sit amet consectetur.</p>
 			</section>
 			<form action="#">
-				<div class="input-wrapper">
-					<input type="text" placeholder="Your Name*" class="input" tabindex="1">
-					<input type="email" placeholder="Your Email*" class="input" tabindex="2">
-					<input type="text" placeholder="Subject*" class="input" tabindex="3">
+				<div class="row">
+					<div class="input-wrapper">
+						<input type="text" placeholder="Your Name*" class="input" tabindex="1">
+						<input type="email" placeholder="Your Email*" class="input" tabindex="2">
+						<input type="text" placeholder="Subject*" class="input" tabindex="3">
+					</div>
+					<div class="textarea-wrapper">
+						<textarea name="#" id="#" cols="30" rows="9" tabindex="4" placeholder="Message*"></textarea>
+					</div>
 				</div>
-				<div class="textarea-wrapper">
-					<textarea name="#" id="#" cols="30" rows="9" tabindex="4" placeholder="Message*"></textarea>
-					<button value="Send Message" class="submit" tabindex="5"><img src="images/submit-btn.png" alt="Image">Send Message</button>
-				</div>
+				<button value="Send Message" class="submit" tabindex="5"><i class="fa fa-paper-plane"></i>Send Message</button>
 			</form>
 		</div>
 	</section>

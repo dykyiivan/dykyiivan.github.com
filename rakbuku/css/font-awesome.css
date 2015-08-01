@@ -895,6 +895,7 @@
 }
 .fa-angle-double-right:before {
   content: "\f101";
+  padding-left: 5px;
 }
 .fa-angle-double-up:before {
   content: "\f102";
@@ -1535,6 +1536,7 @@
 .fa-send:before,
 .fa-paper-plane:before {
   content: "\f1d8";
+  padding-right: 6px;
 }
 .fa-send-o:before,
 .fa-paper-plane-o:before {
