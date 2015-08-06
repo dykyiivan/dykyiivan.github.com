@@ -12,15 +12,14 @@ body {
 }
 
 /* Clearfix */
-form:after,
+/*form:after,
 .register:after,
 .login:after,
-.row:after,
- {
+.row:after{
 	clear: both;
 	content: "";
 	display: table;
-} 
+} */
 
 h1 {
 	font-size: 41px;
@@ -39,6 +38,7 @@ form {
 .form-title p {
 	font-size: 20px;
 }
+
 .fb_button {
 	display: block;
 	padding-left: 30px;
@@ -88,7 +88,6 @@ form {
    margin-bottom: 32px;
 }
 
-
 .user-name-login,
 .user-password-login {
 	box-sizing: border-box;
@@ -96,7 +95,6 @@ form {
 	padding: 20px 30px;
 	width: 100%;
 }
-
 
 .user-name-login,
 .user-password-login,
@@ -107,7 +105,6 @@ form {
 	border-radius: 10px;
 	border: 1px solid #0191aa;
 }
-
 
 input::-webkit-input-placeholder { 
 	color:#fff; 
