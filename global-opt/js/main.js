@@ -1,4 +1,17 @@
 $(function(){
+     // Scroll
+     var margin = 0;
+     $("a").click(function() { 
+      $("html, body").animate({
+         scrollTop: $($(this).attr("href")).offset().top+margin+ "px"
+      }, {
+         duration: 1600, 
+         easing: "swing"
+      });
+      return false;
+   });
+
+// Slick Slider
   $('.reviews-slider').slick({
      slidesToShow: 3,
      prevArrow: '<button type="button" class="slick-prev"><img src="img/prev-arrow.png"></button>',
@@ -36,11 +49,16 @@ $(function(){
     }
   ]
   });
-
+  // Mobile Menu
   $('.header__burger').click(function() {
     $('.header__burger,.menu').toggleClass('active');
     $('body').toggleClass('lock');
   });
 
+  // Wow.js
   new WOW().init();
+
+
+
+
 });
