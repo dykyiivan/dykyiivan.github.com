@@ -24,17 +24,18 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
       <div class="header-top">
         <div class="header-wrap">
-          <a class="logo header__logo" href="index.html">
-            <img src="img/logo.png" alt="logo">
+          <a class="logo header__logo" href="index.html" title="Global Opt">
+            <img src="img/logo.png" alt="Global Opt">
           </a>
           <div class="header__burger">
             <span></span>
           </div>
           <nav class="menu">
+            <div class="menu__close">&times;</div>
             <ul class="menu-list">
               <li class="menu__item"><a href="#advantages">Переваги</a></li>
               <li class="menu__item"><a href="#blogs">Наша робота</a></li>
@@ -48,7 +49,7 @@
             <span>Є запитання?</span>
             <a href="tel:+380980000000" class="phone__link">+38(098)00-0000-0</a>
           </div>
-          <button class="button header__button">Передзвонити мені</button>
+          <button class="button header__button" data-modal="call">Передзвонити мені</button>
         </div>
       </div>
        <!-- /.header-top -->
@@ -90,7 +91,7 @@
             </div>
           </div>
         </div>
-        <button class="button hero__button">отримати розрахунок</button>
+        <button class="button hero__button" data-modal="call">отримати розрахунок</button>
       </div>
     </div>
     <!-- /.hero -->
@@ -221,7 +222,7 @@
     <!-- /.container -->
   </section>
   <!-- /.blogs -->
-  <section class="agent" id="agent">
+  <section class="agent">
     <div class="container">
       <img src="img/icon1.png" alt="#">
       <h2 class="agent__title">Агент в Китаї</h2>
@@ -247,7 +248,7 @@
             <span>від 0,3 $ за 1 кг</span></h4>
           <p class="price__text">Морські перевезення вантажів з Китаї в Україну за 35 днів
             з прохождением таможни</p>
-          <button class="button price__button">Детальніше</button>
+          <button class="button price__button" data-modal="call">Детальніше</button>
         </div>
         <div class="price__item fadeInDown wow">
           <div class="price__header-block">
@@ -258,7 +259,7 @@
             <span>от 1$ за 1 кг</span></h4>
           <p class="price__text">ЗД перевезення вантажів з Китаю в Україну від 2 тижнів
             з проходженям митниці</p>
-          <button class="button price__button">Детальніше</button>
+          <button class="button price__button" data-modal="call">Детальніше</button>
         </div>
         <div class="price__item fadeInDown wow">
           <div class="price__header-block">
@@ -269,7 +270,7 @@
             <span>від 1 $ за 1 кг</span></h4>
           <p class="price__text">Автоперевезення вантажів з України в Росію від 2 тижнів
             з проходженням митниці</p>
-          <button class="button price__button">Детальніше</button>
+          <button class="button price__button" data-modal="call">Детальніше</button>
         </div>
         <div class="price__item fadeInDown wow">
           <div class="price__header-block">
@@ -280,21 +281,21 @@
             <span>від 6 $ за 1 кг</span></h4>
           <p class="price__text">Авіаперевезення вантажів з України в Росію до 2 тижнів
             з проходженням митниці</p>
-          <button class="button price__button">Детальніше</button>
+          <button class="button price__button" data-modal="call">Детальніше</button>
         </div>
       </div>
     </div>
     <!-- /.container -->
   </section>
   <!-- /.price -->
-  <section class="advice" id="advice">
+  <section class="advice">
     <div class="container">
       <h2 class="advice__title title">Замовити безкоштовну консультацію</h2>
       <form action="#" id="form" class="advice__form">
         <div class="form-wrap">
           <img src="img/advice-icon.png" alt="#" class="form__icon">
           <input type="text" class="form__input" placeholder="Ваше ім'я ...">
-          <input type="text" class="form__input" placeholder="Ваш номер телефон ...">
+          <input type="text" class="form__input" placeholder="Ваш номер телефону ...">
           <input type="email" class="form__input" placeholder="Ваш е-mail ...">
         </div>
         <button id="form-btn" class="button form__button">Надіслати заявку</button>
@@ -360,7 +361,6 @@
   <div class="container">
     <h2 class="reviews__title title line">відгуки наших клієнтів</h2>
     <h3 class="reviews__subtitle">Ми завжди намагаємося допомогти клієнтам, що б вони зверталися до нас знову</h3>
-  
     <div class="reviews-slider">
       <div class="reviews__item">
         <div class="reviews__img">
@@ -430,7 +430,7 @@
       </div>
      <form action="#" class="contact-form__body">
        <input type="text" class="form__input" placeholder="Ваше ім'я ...">
-       <input type="text" class="form__input" placeholder="Ваш номер телефон ...">
+       <input type="text" class="form__input" placeholder="Ваш номер телефону ...">
        <input type="email" class="form__input" placeholder="Ваш е-mail ...">
        <textarea  id="#" placeholder="Повідомлення ..." class="contact-form__textarea"></textarea>
        <button id="contact-form__btn" class="button form__button contact-form__button">Надіслати заявку</button>
@@ -456,7 +456,7 @@
           <span>Є запитання?</span>
           <a href="tel:+380980000000" class="phone__link">+38(098)00-0000-0</a>
         </div>
-        <button class="button footer__button">Передзвонити мені</button>
+        <button class="button footer__button" data-modal="call">Передзвонити мені</button>
     </div>
     </div>
     <!-- /.footer-top -->
@@ -468,7 +468,23 @@
     </div>
 </footer>
 <!-- /.footer -->
-  
+<div class="overlay">
+  <div class="modal">
+    <div class="modal-form__inner" id="call">
+    <div class="modal__close">&times;</div>
+    <h3 class="modal__title">Заповніть форму</h3>
+    <h4 class="modal__subtitle">і ми Вам зателефонуємо</h4>
+     <form action="#" class="modal-form__body">
+       <input type="text" class="form__input" placeholder="Ваше ім'я ...">
+       <input type="text" class="form__input" placeholder="Ваш номер телефону ...">
+       <button id="modal-form__btn" class="button form__button modal-form__button">Зателефонувати</button>
+     </form>
+   </div>
+  </div>
+</div>
+<!-- To top link -->
+<a class="to-top__link" id="to-top__link" href="#header"><img src="img/to-top.svg" alt="#"></a>
+
 
 
 
