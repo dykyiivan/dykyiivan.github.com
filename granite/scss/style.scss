@@ -1,0 +1,595 @@
+@import "bootstrap-reboot";
+@import "fonts";
+
+
+$fontColor: #292929;
+$font: "Gotham Pro", sans-serif;
+$buttonColor: #ffd200;
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: $font;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: $fontColor;
+}
+
+ /* 
+  Header
+ */
+ .header {
+   &__inner {
+     position: relative;
+     min-height: 100px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     .menu {
+      position: absolute;
+      left: 0;
+      bottom: -60px;
+      width: 100%;
+      &__list {
+        display: flex;
+        min-height: 60px;
+        margin: 0;
+        padding: 0;
+        background-color: #ffcc00;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+      }
+      &__item {
+        a {
+          font-size: 14px;
+          font-weight: 500;
+          color: #000;
+        }
+      }
+   }
+   .menu.active {
+     display: block;
+   }
+ }
+
+ .calls {
+  display: flex;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    span {
+      font-size: 11px;
+      color: #969696;
+      line-height: 1;
+    }
+  }
+  &__link {
+    font-size: 18px;
+    font-weight: 700;
+    color: $fontColor;
+    line-height: 2;
+    transition: all 0.7s ease;
+    &:hover {
+      color: $fontColor;
+    }
+  }
+  &__btn {
+    margin-left: 32px;
+    padding: 13px 21px;
+    color: #292929;
+    background: transparent;
+    border: 2px solid #292929;
+    font-size: 12px;
+    font-weight: 500;
+    transition: all 0.7s ease;
+    &:hover {
+      background-color: #292929;
+      color: #fff
+    }
+  }
+  }
+  &__burger {
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 20px;
+   
+    cursor: pointer;
+    &:after,
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      background-color: #292929;
+      height: 2px;
+      left: 0;
+      transition: all 0.3s ease;
+    }
+    &:after {
+      bottom: 0;
+    }
+    &:before {
+      top: 0;
+    }
+    span {
+      position: absolute;
+      background-color: #292929;
+      top: 9px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      transition: all 0.3s ease;
+    }
+  }
+ }
+.header__burger.active:before {
+  transform: rotate(45deg);
+  top: 9px;
+}
+.header__burger.active:after {
+  transform: rotate(-45deg);
+  bottom: 9px;
+}
+.header__burger.active span  {
+  transform: scale(0);
+}
+
+ /*
+  Hero Block
+ */
+ .hero {
+    min-height: 550px;
+    margin-top: 30px;
+    padding: 130px 0;
+    background: url(../img/hero-bg.jpg) center no-repeat;
+    background-size: cover;
+    &__title {
+      margin-bottom: 45px;
+      font-size: 36px;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    &__subtitle {
+      max-width: 320px;
+      margin-bottom: 65px;
+      font-size: 14px;
+      font-weight: 300;
+      color: #fff;
+    }
+    .hero__link {
+      display: inline-block;
+      margin-left: 30px;
+      font-size: 12px;
+      font-weight: 300;
+      color: #fff;
+      a {
+        margin-left: 10px;
+        color: #fff;
+        font-weight: 400;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+ }
+ .button {
+   padding: 20px 28px;
+   font-size: 12px;
+   font-weight: 500;
+   color: #0d0d0d;
+   background-color: $buttonColor;
+   border: none;
+   transition: all 0.7s ease;
+   &:hover {
+     background-color: #ceaa0e;
+   }
+ }
+
+/*
+ Availability Block
+*/
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: $fontColor;
+  text-transform: uppercase;
+}
+.availability {
+  padding: 80px 0;
+  &__title {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .item {
+    width: 296px;
+    padding: 40px 25px 35px;
+    border: 2px solid #f6f6f6;
+    text-align: center;
+    img {
+      margin-bottom: 40px;
+    }
+    &__title {
+      position: relative;
+      margin-bottom: 25px;
+      font-size: 15px;
+      text-decoration: underline;
+    }
+    &__description {
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 1.6;
+      color: #626262;
+    }
+    &__button {
+      min-width: 180px;
+      margin-top: 25px;
+      padding: 15px 28px;
+    }
+    &__price {
+      margin-top: 25px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #0f0f0f;
+    }
+  }
+}
+
+/*
+  Advantages
+*/
+.advantages {
+  padding: 80px 0;
+  background-color: #f4f4f4;
+  &__title {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    max-width: 296px;
+    padding: 40px 30px;
+    border: 2px solid #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.7s ease;
+    &:hover {
+      background-color: #fff;
+    }
+  }
+  &__icon {
+    margin-bottom: 40px;
+  }
+  &__subtitle {
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: $fontColor;
+  }
+  &__text {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 300;
+  }
+}
+
+/*
+  Popular Products
+*/
+.popular-products {
+  padding: 80px 0 90px;
+  &__title {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+.product {
+  &__item {
+    max-width: 216px;
+    padding: 18px;
+    border: 2px solid #f6f6f6;
+    &--sale {
+      position: relative;
+    }
+  }
+  &__label {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    padding: 8px;
+    font-size: 10px;
+    font-weight: 500;
+    background-color: #ff0000;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+  &__img {
+    margin-bottom: 20px;
+  }
+  &__title {
+    margin-bottom: 25px;
+    font-size: 13px;
+    color: $fontColor;
+    font-weight: 500;
+    text-align: center;
+  }
+  &__price {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    &--sale {
+      color: #ff0000;
+    }
+    &--old-price {
+      font-size: 10px;
+      color: #979797;
+      text-decoration: line-through;
+    }
+  }
+  &__button {
+    width: 180px;
+    margin-top: 30px;
+  }
+}
+
+/*
+  Services
+*/
+.services {
+  padding: 80px 0;
+  background-color: #f4f4f4;
+  &__title {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item {
+    max-width: 296px;
+    width: 100%;
+    min-height: 250px;
+    padding: 50px 0 35px;
+    border: 2px solid #fff;
+    text-align: center;
+    transition: all 0.7s easy;
+    cursor: pointer;
+    &:hover {
+      background-color: #fff;
+    }
+  }
+  &__subtitle {
+    font-size: 15px;
+    font-weight: 500;
+    color: $fontColor;
+    text-decoration: underline;
+  }
+}
+
+/*
+  Google Map
+*/
+.map {
+  position: relative;
+ 
+  &-contact {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    padding: 60px 60px 70px 60px;
+    background-color: #fff;
+    &__title {
+      margin-bottom: 50px;
+    }
+  }
+  .contact__list {
+    margin: 0;
+    padding: 0 0 0 35px;
+    list-style: none;
+  }
+  .contact__phone {
+    margin-bottom: 10px;
+    position: relative;
+    &::before {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: -35px;
+        background: url(../img/phone-icon.png) center no-repeat;
+        height: 12px;
+        width: 12px;
+      }
+    }
+    a {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: $fontColor;
+    }
+    
+  }
+  .contact__email {
+    position: relative;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: underline;
+    color: $fontColor;
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: -35px;
+      background: url(../img/email-icon.png) center no-repeat;
+      height: 10px;
+      width: 14px;
+
+    }
+  }
+  .contact__address {
+    position: relative;
+    margin: 27px 0;
+    address {
+      font-size: 14px;
+      font-weight: normal;
+      color: $fontColor;
+    }
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: -35px;
+      background: url(../img/location-icon.png) center no-repeat;
+      height: 15px;
+      width: 10px;
+    }
+  }
+  
+/*
+  Footer
+*/
+.footer {
+  padding: 50px 0;
+  background-color: $fontColor;
+  &__logo {
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+  &__copyright {
+    margin: 0;
+    font-size: 12px;
+    color: #fff;
+    line-height: 1;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.calls-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  &__inner {
+    span {
+      font-size: 12px;
+      color: #fff;
+    }
+  }
+  &__btn {
+   width: 160px;
+   height: 40px;
+   margin-top: 20px;
+   border: 2px solid #fff;
+   background-color: transparent;
+   color: #fff;
+   cursor: pointer;
+   transition: all 0.7s ease;
+   &:hover {
+     background-color: #fff;
+     color: $fontColor;
+   }
+  }
+}
+.calls__link--white {
+  display: block;
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-align: right;
+  line-height: 1;
+  &:hover {
+    color: #fff;
+  }
+}
+
+/*
+  Form Requers
+*/
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6); 
+}
+#consultation, #order, #thanks {
+  display: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  min-height: 350px;
+  background-color: #f2f2f2;
+  border: 2px solid #fff;
+  text-align: center;
+  &__title {
+    text-transform: uppercase;
+  }
+  &__close {
+    position: absolute;
+    top: -30px;
+    right: -4px;
+    color: #ff0000;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  &.modal__mini {
+    min-height: 100px;
+}
+  & .error {
+    border: 1px solid #ff0000;
+  }
+  label.error {
+    border: none;
+  }
+}
+.form-request {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-top: 30px;
+}
+.form__input {
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  border: 2px solid #f2f2f2;
+}
+
+
+//Import Media Query
+@import "media";
