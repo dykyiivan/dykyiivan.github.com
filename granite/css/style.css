@@ -329,28 +329,28 @@ template {
 }
 @font-face {
   font-family: 'Gotham Pro';
-  src: url("../fonts/GothamPro-Light.woff2") format("woff2"), url("/fonts/GothamPro-Light.woff") format("woff");
+  src: url("../fonts/GothamPro-Light.woff2") format("woff2"), url("../fonts/GothamPro-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gotham Pro';
-  src: url("../fonts/GothamPro-Bold.woff2") format("woff2"), url("/fonts/GothamPro-Bold.woff") format("woff");
+  src: url("../fonts/GothamPro-Bold.woff2") format("woff2"), url("../fonts/GothamPro-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gotham Pro';
-  src: url("../fonts/GothamPro-Medium.woff2") format("woff2"), url("/fonts/GothamPro-Medium.woff") format("woff");
+  src: url("../fonts/GothamPro-Medium.woff2") format("woff2"), url("../fonts/GothamPro-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gotham Pro';
-  src: url("../fonts/GothamPro.woff2") format("woff2"), url("/fonts/GothamPro.woff") format("woff");
+  src: url("../fonts/GothamPro.woff2") format("woff2"), url("../fonts/GothamPro.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -1203,4 +1203,3 @@ body {
 /* Small Devices, Tablets */
 /* Medium Devices, Desktops */
 /* Large Devices, Wide Screens */
-/*# sourceMappingURL=style.css.map */
