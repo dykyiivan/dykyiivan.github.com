@@ -11,7 +11,7 @@ $(function(){
     if(cat === "all") {
       $("[data-category]").removeClass("hide");
     } else {
-      $("[data-category]").each(function () {
+      $("[data-category]").each(function() {
         let workCat = $(this).data("category");
 
         if (workCat != cat) {
@@ -59,34 +59,42 @@ $(function(){
     ]
   });
 
-  // Mobile Menu 
+  // Mobile Menu
   $(".header__burger").on("click", function(e) {
     $(".header__burger, .menu").toggleClass("active");
   });
 
-  // Counter 
+  // Scroll to section
+  $(".menu").on("click", "a", function(event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+    top = $(id).offset().top;
+  $('body,html').animate({ scrollTop: top }, 1500);
+  });
+
+  // Counter
   $(".counter__amount").counterUp({
     delay: 5,
     time: 500
   });
 
-  //Modal 
-  $("[data-modal=consultation]").on("click", function() {
-    $(".overlay, #consultation").fadeIn(700);
-  });
-
+  //Modal
   $(".form__close").on("click", function() {
     $(".overlay, #consultation, #order").fadeOut(700);
   });
 
-  $("[data-modal=order]").each(function(i) {
-    $(this).on("click", function() {
-        $("#order .form__subtitle").text($(".tariff-package__title").eq(i).text());
-        $(".overlay, #order").fadeIn(700);
-      })
+  $("[data-modal=consultation]").on("click", function(){
+    $("#consultation").fadeIn();
   });
-
-  // Validate Form 
+  
+  $("[data-modal=order]").each(function(i) {
+    $(this).on("click", function () {
+      $("#order .form__subtitle").text($(".tariff-package__title").eq(i).text());
+      $("#order").fadeIn("slow");
+    });
+  });
+  
+  // Validate Form
   function validateForms(form) {
     $(form).validate({
       rules: {
@@ -103,11 +111,11 @@ $(function(){
       },
     });
   }
- validateForms("#consultation");
- validateForms("#order");
-  validateForms("#contact__form");
+ validateForms("#consultation form");
+ validateForms("#order form");
+ validateForms("#contact__form");
 
   //Mask for Phone input
   $("input[name=phone]").mask("+38 (999) 99-9999-99");
- 
+
 });

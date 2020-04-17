@@ -26,12 +26,12 @@
         </div>
         <nav class="menu">
           <ul class="menu__list">
-            <li class="menu__item"><a href="#" class="menu__link">Як ми працюємо</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Переваги</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Відгуки</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Тарифи</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Партнери</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
+            <li class="menu__item"><a href="#scheme" class="menu__link">Як ми працюємо</a></li>
+            <li class="menu__item"><a href="#advantages" class="menu__link">Переваги</a></li>
+            <li class="menu__item"><a href="#reviews" class="menu__link">Відгуки</a></li>
+            <li class="menu__item"><a href="#partners" class="menu__link">Партнери</a></li>
+            <li class="menu__item"><a href="#tariff" class="menu__link">Тарифи</a></li>
+            <li class="menu__item"><a href="#contact" class="menu__link">Контакти</a></li>
           </ul>
         </nav>
         <button class="header__button button" data-modal="consultation">Зателефонувати мені</button>
@@ -146,7 +146,7 @@
   </section>
   <!-- /.about -->
 
-  <section class="scheme">
+  <section class="scheme" id="scheme">
     <div class="container">
       <h2 class="scheme__title title">Як надається послуга</h2>
       <div class="scheme__inner">
@@ -175,7 +175,7 @@
   </section>
   <!-- /.scheme -->
 
- <section class="advantages">
+ <section class="advantages" id="advantages">
     <div class="container">
       <h2 class="advantages__title title">Перевага сервісу Advogrand
           в порівнянні з іншими юридичними компаніями</h2>
@@ -249,7 +249,7 @@
   </section>
   <!-- /.consultation -->
 
- <section class="reviews">
+ <section class="reviews" id="reviews">
     <div class="container">
       <h2 class="reviews__title title">Відгуки</h2>
       <div class="reviews__navigations">
@@ -299,7 +299,7 @@
   </section>
   <!-- /.reviews -->
 
-  <section class="partners">
+  <section class="partners" id="partners">
     <div class="container">
       <h2 class="partners__title title">Партнери Advogrand</h2>
       <div class="partners__slider">
@@ -328,7 +328,7 @@
   </section>
   <!-- /.partners -->
 
-  <section class="tariff">
+  <section class="tariff" id="tariff">
     <div class="container">
       <h2 class="tariff__title title">Оберіть тариф</h2>
       <h3 class="tariff__subtitle">Ви можете оформити карту і почати користуватися послугами вже зараз!
@@ -403,7 +403,7 @@
   </section>
   <!-- /.tariff -->
 
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="container">
       <div class="contact__inner">
         <div class="contact__body">
@@ -420,13 +420,13 @@
             <span class="contact__text">Графік роботи:</span>
             <p class="contact__work-schedule">З понеділка по п'ятницю: <br>
                9:00 - 22:00</p>
-              
+
             <p class="contact__work-schedule">У святкові та вихідні дні:<br>
               тільки телефонні консультації
               10:00 - 20:00</p>
           </div>
         </div>
-  
+
         <div class="form">
           <h3 class="form__title">Напишіть нам листа або задайте своє питання</h3>
           <form id="contact__form" action="#">
@@ -461,12 +461,12 @@
   </footer>
   <!-- /.footer -->
 
-  <div class="overlay">
-    <div class="modal">
+  <!-- <div class="overlayd"> -->
+    <div class="modal" id="consultation">
       <div class="form form__modal">
         <div class="form__close">&times;</div>
         <h3 class="form__title">Напишіть нам листа або задайте своє питання</h3>
-        <form id="consultation" action="#">
+        <form action="#">
           <div class="form__row">
             <label class="form__label" for="name-question">Введіть своє ім'я</label>
             <input class="form__input" name="name" type="text" id="name-question">
@@ -485,12 +485,12 @@
       </div>
     </div>
 
-    <div class="modal">
-      <div class="form form__modal">
-        <div class="form__close">&times;</div>
+    <div class="modal" id="order">
+      <div class="form form__modal" >
+             <div class="form__close">&times;</div>
         <h3 class="form__title">Ваше замовлення:</h3>
-        <h4 class="form__subtitle">Персональна карта для Вас</h4>
-        <form id="order" action="#">
+        <h4 class="form__subtitle">Персональна карта</h4>
+        <form action="#">
           <div class="form__row">
             <label class="form__label" for="name-call">Введіть своє ім'я</label>
             <input class="form__input" name="name" type="text" id="name-call">
@@ -501,11 +501,11 @@
           </div>
           <button class="button form__button">Замовити дзвінок консультанта</button>
           <span class="form__text">Перетелефонуємо протягом 5 хвилин</span>
-        </form>
+             </form>
       </div>
     </div>
 
-  </div>
+  <!-- </div> -->
   <!-- /.overlay -->
 
   <!-- jQuery -->

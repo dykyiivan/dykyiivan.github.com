@@ -1131,6 +1131,7 @@ ul.tariff-package__list span {
 
 .form__title {
   margin-bottom: 30px;
+  padding-right: 50px;
   font-size: 18px;
   font-weight: bold;
   line-height: 23px;
@@ -1232,10 +1233,11 @@ ul.tariff-package__list span {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
+  z-index: 9;
 }
 
 .form__modal {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   width: 100%;
@@ -1243,6 +1245,7 @@ ul.tariff-package__list span {
   background: #fff;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  z-index: 9999;
 }
 
 .form__modal .form__close {
@@ -1255,13 +1258,27 @@ ul.tariff-package__list span {
   z-index: 999999;
 }
 
-#question,
-#call,
-.overlay {
+#consultation {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
 }
 
-#call .form__modal {
+#order {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#order.form__modal {
   min-height: 430px;
 }
 
