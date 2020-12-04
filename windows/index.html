@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gulp 4</title>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/src/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/src/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/src/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/src/favicon/site.webmanifest">
+  <!-- Style Css -->
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+  <!-- Header  -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="logo__box">
+          <a href="#" class="logo header__logo">
+            <img src="images/src/logo.png" alt="Ірвас">
+          </a>
+          <div class="slogan header__slogan">Засклення балконів і лоджій</div>
+        </div>
+        <button class="header__btn" data-modal="consultation" aria-label="Викликати майстра">Викликати майстра</button>
+        <div class="schedule header__schedule">
+          без вихідних
+          <span>9:00 - 18:00</span>
+        </div>
+        <div class="phone header__phone">
+          <a href="tel:880050010233" class="phone__num">8(800)500-102-33</a>
+          <button class="order" data-modal="consultation" aria-label="Замовити дзвінок">Замовити дзвінок</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <h1 class="hero__title">Засклення балконів "під ключ" <span>за 6000 гривень!</span></h1>
+          <div class="hero__advantages">
+            <div class="hero__advantage hero__advantage--quality">Висока якість</div>
+            <div class="hero__advantage hero__advantage--time">Швидкий монтаж</div>
+            <div class="hero__advantage hero__advantage--star">Гарантія 3 роки</div>
+            <div class="hero__advantage hero__advantage--delivery">Вивіз сміття</div>
+          </div>
+        </div>
+        <div class="hero-form">
+          <form class="order-form hero__form" action="#">
+            <div class="form__title">Запишіться сьогодні на <span>безкоштовий замір</span></div>
+            <input class="form__input" name="name" type="text" placeholder="Введіть ваше і'мя">
+            <input class="form__input" name="phone" type="tel" placeholder="Введіть ваш телефон">
+            <button  aria-label="Викликати майстра">Визвати майстра</button>
+            <span>Ваші дані конфіденційні</span>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Glazing Section -->
+  <section class="glazing">
+    <div class="container">
+      <h2 class="glazing__title title">Засклення балконів і лоджій</h2>
+      <div class="glazing__inner">
+        <a class="glazing__btn" href="#">
+          <img src="images/dest/01.png" alt="#" class="glazing__btn-img">
+          <h3 class="glazing__btn-title">Дерев'яне скління</h3>
+        </a>
+        <a class="glazing__btn" href="#">
+          <img src="images/dest/02.png" alt="#" class="glazing__btn-img">
+          <h3 class="glazing__btn-title">Алюмінієве скління</h3>
+        </a>
+        <a class="glazing__btn" href="#">
+          <img src="images/dest/03.png" alt="#" class="glazing__btn-img">
+          <h3 class="glazing__btn-title">Скління пластиковими рамами</h3>
+        </a>
+        <a class="glazing__btn" href="#">
+          <img src="images/dest/04.png" alt="#" class="glazing__btn-img">
+          <h3 class="glazing__btn-title">Французьке скління (панорамне)</h3>
+        </a>
+        <a class="glazing__btn" href="#">
+          <img src="images/dest/05.png" alt="#" class="glazing__btn-img">
+          <h3 class="glazing__btn-title">Скління з виносом</h3>
+        </a>
+      </div>
+      <div class="glazing__inner-box">
+        <div class="glazing__item">
+          <div class="glazing__item-col glazing__item-col--cold">
+            <h4 class="glazing__item-title">Холодне</h4>
+            <img src="images/dest/cold-img.jpg" alt="#" class="glazing__item-img">
+            <ul class="glazing__list">
+              <li>Конструктивна товщина 42-58 мм</li>
+              <li>Скління: поліроване скло (товщиною 4 - 5 мм)</li>
+              <li>Теплоізоляція: 0,07 м2 * С / Вт</li>
+              <li>Звукоізоляція: 20-27 дБ</li>
+            </ul>
+            <div class="glazing__bottom">
+              <div class="glazing__price">
+                1200 грн. кв.м
+                <span>під ключ</span>
+              </div>
+              <button class="button" data-modal="calculation"  aria-label="Розрахувати ціну">Розрахувати ціну</button>
+            </div>
+          </div>
+          <div class="glazing__item-col glazing__item-col--warm">
+            <h4 class="glazing__item-title">Тепле</h4>
+            <img src="images/dest/warm-img.jpg" alt="#" class="glazing__item-img">
+            <ul class="glazing__list">
+              <li>Конструктивна товщина профілю: 58-78 м</li>
+              <li>Скління: однокамерні і двокамерні склопакети</li>
+              <li>Теплоізоляція: 0,63 - 1,05 м2 * С / Вт</li>
+              <li>Звукоізоляція: до 5 класу</li>
+            </ul>
+            <div class="glazing__bottom">
+              <div class="glazing__price">
+                2200 грн. кв.м
+                <span>під ключ</span>
+              </div>
+              <button class="button" data-modal="calculation"  aria-label="Розрахувати ціну">Розрахувати ціну</button>
+            </div>
+          </div>
+        </div>
+        <div class="glazing__item">
+          <div class="glazing__item-col glazing__item-col--cold">
+            <h4 class="glazing__item-title">Холодне 1</h4>
+            <img src="images/dest/cold-img.jpg" alt="#" class="glazing__item-img">
+            <ul class="glazing__list">
+              <li>Конструктивна товщина 42-58 мм</li>
+              <li>Скління: поліроване скло (товщиною 4 - 5 мм)</li>
+              <li>Теплоізоляція: 0,07 м2 * С / Вт</li>
+              <li>Звукоізоляція: 20-27 дБ</li>
+            </ul>
+            <div class="glazing__bottom">
+              <div class="glazing__price">
+                1200 грн. кв.м
+                <span>під ключ</span>
+              </div>
+              <button class="button" data-modal="calculation" aria-label="Розрахувати ціну">Розрахувати ціну</button>
+            </div>
+          </div>
+          <div class="glazing__item-col glazing__item-col--warm">
+            <h4 class="glazing__item-title">Тепле 2</h4>
+            <img src="images/dest/warm-img.jpg" alt="#" class="glazing__item-img">
+            <ul class="glazing__list">
+              <li>Конструктивна товщина профілю: 58-78 м</li>
+              <li>Скління: однокамерні і двокамерні склопакети</li>
+              <li>Теплоізоляція: 0,63 - 1,05 м2 * С / Вт</li>
+              <li>Звукоізоляція: до 5 класу</li>
+            </ul>
+            <div class="glazing__bottom">
+              <div class="glazing__price">
+                2200 грн. кв.м
+                <span>під ключ</span>
+              </div>
+              <button class="button" data-modal="calculation"  aria-label="Розрахувати ціну">Розрахувати ціну</button>
+            </div>
+          </div>
+        </div>
+        <div class="glazing__item">
+          <div class="glazing__item-col glazing__item-col--cold">
+            <h4 class="glazing__item-title">Холодне 3</h4>
+            <img src="images/dest/cold-img.jpg" alt="#" class="glazing__item-img">
+            <ul class="glazing__list">
+              <li>Конструктивна товщина 42-58 мм</li>
+              <li>Скління: поліроване скло (товщиною 4 - 5 мм)</li>
+              <li>Теплоізоляція: 0,07 м2 * С / Вт</li>
+              <li>Звукоізоляція: 20-27 дБ</li>
+            </ul>
+            <div class="glazing__bottom">
+              <div class="glazing__price">
+                1200 грн. кв.м
+                <span>під ключ</span>
+              </div>
+              <button class="button" data-modal="calculation"  aria-label="Розрахувати ціну">Розрахувати ціну</button>
+            </div>
+          </div>
+          <div class="glazing__item-col glazing__item-col--warm">
+            <h4 class="glazing__item-title">Тепле 3</h4>
+            <img src="images/dest/warm-img.jpg" alt="#" class="glazing__item-img">
+            <ul class="glazing__list">
+              <li>Конструктивна товщина профілю: 58-78 м</li>
+              <li>Скління: однокамерні і двокамерні склопакети</li>
+              <li>Теплоізоляція: 0,63 - 1,05 м2 * С / Вт</li>
+              <li>Звукоізоляція: до 5 класу</li>
+            </ul>
+            <div class="glazing__bottom">
+              <div class="glazing__price">
+                2200 грн. кв.м
+                <span>під ключ</span>
+              </div>
+              <button class="button" data-modal="calculation"  aria-label="Розрахувати ціну">Розрахувати ціну</button>
+            </div>
+          </div>
+        </div>
+        <div class="glazing__item">
+          <div class="glazing__item-col glazing__item-col--cold">
+            <h4 class="glazing__item-title">Холодне 4</h4>
+            <img src="images/dest/cold-img.jpg" alt="#" class="glazing__item-img">
+            <ul class="glazing__list">
+              <li>Конструктивна товщина 42-58 мм</li>
+              <li>Скління: поліроване скло (товщиною 4 - 5 мм)</li>
+              <li>Теплоізоляція: 0,07 м2 * С / Вт</li>
+              <li>Звукоізоляція: 20-27 дБ</li>
+            </ul>
+            <div class="glazing__bottom">
+              <div class="glazing__price">
+                1200 грн. кв.м
+                <span>під ключ</span>
+              </div>
+              <button class="button" data-modal="calculation"  aria-label="Розрахувати ціну">Розрахувати ціну</button>
+            </div>
+          </div>
+          <div class="glazing__item-col glazing__item-col--warm">
+            <h4 class="glazing__item-title">Тепле 4</h4>
+            <img src="images/dest/warm-img.jpg" alt="#" class="glazing__item-img">
+            <ul class="glazing__list">
+              <li>Конструктивна товщина профілю: 58-78 м</li>
+              <li>Скління: однокамерні і двокамерні склопакети</li>
+              <li>Теплоізоляція: 0,63 - 1,05 м2 * С / Вт</li>
+              <li>Звукоізоляція: до 5 класу</li>
+            </ul>
+            <div class="glazing__bottom">
+              <div class="glazing__price">
+                2200 грн. кв.м
+                <span>під ключ</span>
+              </div>
+              <button class="button" data-modal="calculation"  aria-label="Розрахувати ціну">Розрахувати ціну</button>
+            </div>
+          </div>
+        </div>
+        <div class="glazing__item">
+          <div class="glazing__item-col glazing__item-col--cold">
+            <h4 class="glazing__item-title">Холодне 5</h4>
+            <img src="images/dest/cold-img.jpg" alt="#" class="glazing__item-img">
+            <ul class="glazing__list">
+              <li>Конструктивна товщина 42-58 мм</li>
+              <li>Скління: поліроване скло (товщиною 4 - 5 мм)</li>
+              <li>Теплоізоляція: 0,07 м2 * С / Вт</li>
+              <li>Звукоізоляція: 20-27 дБ</li>
+            </ul>
+            <div class="glazing__bottom">
+              <div class="glazing__price">
+                1200 грн. кв.м
+                <span>під ключ</span>
+              </div>
+              <button class="button" data-modal="calculation"  aria-label="Викликати майстра">Розрахувати ціну</button>
+            </div>
+          </div>
+          <div class="glazing__item-col glazing__item-col--warm">
+            <h4 class="glazing__item-title">Тепле 5</h4>
+            <img src="images/dest/warm-img.jpg" alt="#" class="glazing__item-img">
+            <ul class="glazing__list">
+              <li>Конструктивна товщина профілю: 58-78 м</li>
+              <li>Скління: однокамерні і двокамерні склопакети</li>
+              <li>Теплоізоляція: 0,63 - 1,05 м2 * С / Вт</li>
+              <li>Звукоізоляція: до 5 класу</li>
+            </ul>
+            <div class="glazing__bottom">
+              <div class="glazing__price">
+                2200 грн. кв.м
+                <span>під ключ</span>
+              </div>
+              <button class="button" data-modal="calculation"  aria-label="Розрахувати ціну">Розрахувати ціну</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Finishing Section -->
+  <section class="finishing">
+    <div class="container">
+      <div class="finishing__title title">Замовте обробки балкона зі знижкою 60%!</div>
+      <div class="finishing__inner">
+        <div class="finishing__buttons">
+          <a href="#" class="finishing__btn">Внутрішнє оздоблення</a>
+          <a href="#" class="finishing__btn">Зовнішнє оздоблення</a>
+          <a href="#" class="finishing__btn">Виносне скління</a>
+          <a href="#" class="finishing__btn">Дах на балкон</a>
+        </div>
+        <div class="finishing__content">
+          <div class="finishing__content-box">
+            <div class="finishing__content-img">
+              <img src="images/dest/finishing-of-balconies__img.jpg" alt="#">
+            </div>
+            <div class="finishing__content-item__wrapper">
+              <div class="finishing__content-item">
+                <img src="images/dest/finishing-of-balconies__icon1.png" alt="#" class="finishing__content-item__icon">
+                <h4 class="finishing__content-item__title">Вагонка</h4>
+                <div class="finishing__content-item__price">
+                  300 грн. кв. м <span>з матеріалом</span>
+                </div>
+              </div>
+              <div class="finishing__content-item">
+                <img src="images/dest/finishing-of-balconies__icon5.png" alt="#" class="finishing__content-item__icon">
+                <h4 class="finishing__content-item__title">Пластикова вагонка</h4>
+                <div class="finishing__content-item__price">
+                  350 грн. кв. м <span>з матеріалом</span>
+                </div>
+              </div>
+              <div class="finishing__content-item">
+                <img src="images/dest/finishing-of-balconies__icon2.png" alt="#" class="finishing__content-item__icon">
+                <h4 class="finishing__content-item__title">ДСП-панелі</h4>
+                <div class="finishing__content-item__price">
+                  400 грн. кв. м <span>з матеріалом</span>
+                </div>
+              </div>
+              <div class="finishing__content-item">
+                <img src="images/dest/finishing-of-balconies__icon3.png" alt="#" class="finishing__content-item__icon">
+                <h4 class="finishing__content-item__title">Підлога з ламінату</h4>
+                <div class="finishing__content-item__price">
+                  500 грн. кв. м <span>з матеріалом</span>
+                </div>
+              </div>
+              <div class="finishing__content-item">
+                <img src="images/dest/finishing-of-balconies__icon4.png" alt="#" class="finishing__content-item__icon">
+                <h4 class="finishing__content-item__title">Підлога з дерева</h4>
+                <div class="finishing__content-item__price">
+                  800 грн. кв. м <span>з матеріалом</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="finishing__form">
+            <form class="order-form" action="#">
+              <div class="form__title">Запишіться сьогодні на <span>безкоштовий замір</span></div>
+              <input class="form__input" name="name" type="text" placeholder="Введіть ваше і'мя">
+              <input class="form__input" name="phone" type="tel" placeholder="Введіть ваш телефон">
+              <button  aria-label="Визвати майстра">Визвати майстра</button>
+              <span>Ваші дані конфіденційні</span>
+            </form>
+          </div>
+        </div>
+        <div class="finishing__content">
+          <div class="finishing__content-box">
+            <div class="finishing__content-img">
+              <img src="images/dest/finishing-of-balconies__img1.jpg" alt="#">
+            </div>
+            <div class="finishing__content-item__wrapper">
+              <div class="finishing__content-item">
+                <img src="images/dest/finishing-of-balconies__icon1.png" alt="#" class="finishing__content-item__icon">
+                <h4 class="finishing__content-item__title">Вагонка </h4>
+                <div class="finishing__content-item__price">
+                  300 грн. кв. м <span>з матеріалом</span>
+                </div>
+              </div>
+              <div class="finishing__content-item">
+                <img src="images/dest/finishing-of-balconies__icon5.png" alt="#" class="finishing__content-item__icon">
+                <h4 class="finishing__content-item__title">Пластикова вагонка </h4>
+                <div class="finishing__content-item__price">
+                  350 грн. кв. м <span>з матеріалом</span>
+                </div>
+              </div>
+              <div class="finishing__content-item">
+                <img src="images/dest/finishing-of-balconies__icon2.png" alt="#" class="finishing__content-item__icon">
+                <h4 class="finishing__content-item__title">ДСП-панелі </h4>
+                <div class="finishing__content-item__price">
+                  400 грн. кв. м <span>з матеріалом</span>
+                </div>
+              </div>
+              <div class="finishing__content-item">
+                <img src="images/dest/finishing-of-balconies__icon3.png" alt="#" class="finishing__content-item__icon">
+                <h4 class="finishing__content-item__title">Підлога з ламінату </h4>
+                <div class="finishing__content-item__price">
+                  500 грн. кв. м <span>з матеріалом</span>
+                </div>
+              </div>
+              <div class="finishing__content-item">
+                <img src="images/dest/finishing-of-balconies__icon4.png" alt="#" class="finishing__content-item__icon">
+                <h4 class="finishing__content-item__title">Підлога з дерева </h4>
+                <div class="finishing__content-item__price">
+                  800 грн. кв. м <span>з матеріалом</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="finishing__form">
+            <form class="order-form" action="#">
+              <div class="form__title">Запишіться сьогодні на <span>безкоштовий замір</span></div>
+              <input class="form__input" name="name" type="text" placeholder="Введіть ваше і'мя">
+              <input class="form__input" name="phone" type="tel" placeholder="Введіть ваш телефон">
+              <button aria-label="Визвати майстра">Визвати майстра</button>
+              <span>Ваші дані конфіденційні</span>
+            </form>
+          </div>
+        </div>
+        <div class="finishing__content">
+          <div class="finishing__content-box">
+            <div class="finishing__content-img">
+              <img src="images/dest/finishing-of-balconies__img2.jpg" alt="#">
+            </div>
+            <div class="finishing__content-item__wrapper">
+              <div class="finishing__content-item">
+                <img src="images/dest/finishing-of-balconies__icon1.png" alt="#" class="finishing__content-item__icon">
+                <h4 class="finishing__content-item__title">Вагонка </h4>
+                <div class="finishing__content-item__price">
+                  300 грн. кв. м <span>з матеріалом</span>
+                </div>
+              </div>
+              <div class="finishing__content-item">
+                <img src="images/dest/finishing-of-balconies__icon5.png" alt="#" class="finishing__content-item__icon">
+                <h4 class="finishing__content-item__title">Пластикова вагонка </h4>
+                <div class="finishing__content-item__price">
+                  350 грн. кв. м <span>з матеріалом</span>
+                </div>
+              </div>
+              <div class="finishing__content-item">
+                <img src="images/dest/finishing-of-balconies__icon2.png" alt="#" class="finishing__content-item__icon">
+                <h4 class="finishing__content-item__title">ДСП-панелі </h4>
+                <div class="finishing__content-item__price">
+                  400 грн. кв. м <span>з матеріалом</span>
+                </div>
+              </div>
+              <div class="finishing__content-item">
+                <img src="images/dest/finishing-of-balconies__icon3.png" alt="#" class="finishing__content-item__icon">
+                <h4 class="finishing__content-item__title">Підлога з ламінату </h4>
+                <div class="finishing__content-item__price">
+                  500 грн. кв. м <span>з матеріалом</span>
+                </div>
+              </div>
+              <div class="finishing__content-item">
+                <img src="images/dest/finishing-of-balconies__icon4.png" alt="#" class="finishing__content-item__icon">
+                <h4 class="finishing__content-item__title">Підлога з дерева </h4>
+                <div class="finishing__content-item__price">
+                  800 грн. кв. м <span>з матеріалом</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="finishing__form">
+            <form class="order-form" action="#">
+              <div class="form__title">Запишіться сьогодні на <span>безкоштовий замір</span></div>
+              <input class="form__input" name="name" type="text" placeholder="Введіть ваше і'мя">
+              <input class="form__input" name="phone" type="tel" placeholder="Введіть ваш телефон">
+              <button aria-label="Визвати майстра">Визвати майстра</button>
+              <span>Ваші дані конфіденційні</span>
+            </form>
+          </div>
+        </div>
+        <div class="finishing__content">
+          <div class="finishing__content-box">
+            <div class="finishing__content-img">
+              <img src="images/dest/finishing-of-balconies__img3.jpg" alt="#">
+            </div>
+            <div class="finishing__content-item__wrapper">
+              <div class="finishing__content-item">
+                <img src="images/dest/finishing-of-balconies__icon1.png" alt="#" class="finishing__content-item__icon">
+                <h4 class="finishing__content-item__title">Вагонка </h4>
+                <div class="finishing__content-item__price">
+                  300 грн. кв. м <span>з матеріалом</span>
+                </div>
+              </div>
+              <div class="finishing__content-item">
+                <img src="images/dest/finishing-of-balconies__icon5.png" alt="#" class="finishing__content-item__icon">
+                <h4 class="finishing__content-item__title">Пластикова вагонка </h4>
+                <div class="finishing__content-item__price">
+                  350 грн. кв. м <span>з матеріалом</span>
+                </div>
+              </div>
+              <div class="finishing__content-item">
+                <img src="images/dest/finishing-of-balconies__icon2.png" alt="#" class="finishing__content-item__icon">
+                <h4 class="finishing__content-item__title">ДСП-панелі </h4>
+                <div class="finishing__content-item__price">
+                  400 грн. кв. м <span>з матеріалом</span>
+                </div>
+              </div>
+              <div class="finishing__content-item">
+                <img src="images/dest/finishing-of-balconies__icon3.png" alt="#" class="finishing__content-item__icon">
+                <h4 class="finishing__content-item__title">Підлога з ламінату </h4>
+                <div class="finishing__content-item__price">
+                  500 грн. кв. м <span>з матеріалом</span>
+                </div>
+              </div>
+              <div class="finishing__content-item">
+                <img src="images/dest/finishing-of-balconies__icon4.png" alt="#" class="finishing__content-item__icon">
+                <h4 class="finishing__content-item__title">Підлога з дерева </h4>
+                <div class="finishing__content-item__price">
+                  800 грн. кв. м <span>з матеріалом</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="finishing__form">
+            <form class="order-form" action="#">
+              <div class="form__title">Запишіться сьогодні на <span>безкоштовий замір</span></div>
+              <input class="form__input" name="name" type="text" placeholder="Введіть ваше і'мя">
+              <input class="form__input" name="phone" type="tel" placeholder="Введіть ваш телефон">
+              <button aria-label="Визвати майстра">Визвати майстра</button>
+              <span>Ваші дані конфіденційні</span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works Section -->
+  <section class="works">
+    <div class="container">
+      <h2 class="works__title title">Наші роботи</h2>
+      <div class="works__inner">
+        <a class="works__item" href="images/dest/window.jpg">
+          <img src="images/dest/work__img.png" alt="#">
+        </a>
+        <a class="works__item" href="images/dest/window1.jpg">
+          <img src="images/dest/work__img2.png" alt="#">
+        </a>
+        <a class="works__item" href="images/dest/window.jpg">
+          <img src="images/dest/work__img3.png" alt="#">
+        </a>
+        <a class="works__item" href="images/dest/window1.jpg">
+          <img src="images/dest/work__img4.png" alt="#">
+        </a>
+        <a class="works__item" href="images/dest/window.jpg">
+          <img src="images/dest/work__img5.png" alt="#">
+        </a>
+        <a class="works__item" href="images/dest/window1.jpg">
+          <img src="images/dest/work__img6.png" alt="#">
+        </a>
+        <a class="works__item" href="images/dest/window.jpg">
+          <img src="images/dest/work__img7.png" alt="#">
+        </a>
+        <a class="works__item" href="images/dest/window1.jpg">
+          <img src="images/dest/work__img8.png" alt="#">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guarantee Section -->
+  <section class="guarantee">
+    <div class="container">
+      <div class="guarantee__title">Ми гарантуємо</div>
+      <div class="guarantee__inner">
+        <div class="guarantee__item">
+          <div class="guarantee__item-icon">
+            <img src="images/dest/medal__icon.png" alt="#">
+          </div>
+          <h4 class="guarantee__item-title">Висока якість</h4>
+        </div>
+        <div class="guarantee__item">
+          <div class="guarantee__item-icon">
+            <img src="images/dest/list__icon.png" alt="#">
+          </div>
+          <h4 class="guarantee__item-title">Виконання робіт
+            під ключ</h4>
+        </div>
+        <div class="guarantee__item">
+          <div class="guarantee__item-icon">
+            <img src="images/dest/alarm-clock__icon.png" alt="#">
+          </div>
+          <h4 class="guarantee__item-title">Монтаж в короткие
+            сроки</h4>
+        </div>
+        <div class="guarantee__item">
+          <div class="guarantee__item-icon">
+            <img src="images/dest/piggy-bank__icon.png" alt="#">
+          </div>
+          <h4 class="guarantee__item-title">Ціни
+            від виробника</h4>
+        </div>
+        <div class="guarantee__item">
+          <div class="guarantee__item-icon">
+            <img src="images/dest/design-tool__icon.png" alt="#">
+          </div>
+          <h4 class="guarantee__item-title">Безкоштовний замір
+            і консультацію</h4>
+        </div>
+        <div class="guarantee__item">
+          <div class="guarantee__item-icon">
+            <img src="images/dest/piggy-bank__icon.png" alt="#">
+          </div>
+          <h4 class="guarantee__item-title">Тепло і затишок
+            на балконі</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Payment Section -->
+  <section class="payment">
+    <div class="container">
+      <h2 class="payment__title">
+        Ви можете оплатити наші послуги:
+      </h2>
+      <div class="payment__inner">
+        <div class="payment__item">
+          <div class="payment__item-icon">
+            <img src="images/dest/wallet__icon.png" alt="#">
+          </div>
+          <h3 class="payment__item-title">Готівкою</h3>
+        </div>
+        <div class="payment__item">
+          <div class="payment__item-icon">
+            <img src="images/dest/credit-card__icon.png" alt="#">
+          </div>
+          <h3 class="payment__item-title">Банківською картою</h3>
+        </div>
+        <div class="payment__item">
+          <div class="payment__item-icon">
+            <img src="images/dest/museum__icon.png" alt="#">
+          </div>
+          <h3 class="payment__item-title">Безготівковим рахунком</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Discont Section -->
+  <section class="discount">
+    <div class="container">
+      <div class="discount__inner">
+        <div class="discount__content">
+          <h2 class="discount__title">Акція - 50%</h2>
+          <p class="discount__text">Встигни заощадити! Тільки до 20 жовтня!</p>
+          <div class="discount__timer">
+            <h3 class="countdown-title">До завершення акції</h3>
+            <div id="countdown" class="countdown">
+              <div class="countdown-number">
+                <span class="days countdown-time"></span>
+                <span class="countdown-text">Днів</span>
+              </div>
+              <div class="countdown-number">
+                <span class="hours countdown-time"></span>
+                <span class="countdown-text">Годин</span>
+              </div>
+              <div class="countdown-number">
+                <span class="minutes countdown-time"></span>
+                <span class="countdown-text">Хвилин</span>
+              </div>
+              <div class="countdown-number">
+                <span class="seconds countdown-time"></span>
+                <span class="countdown-text">Секунд</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="discont__form">
+          <form class="order-form" action="#">
+            <div class="form__title">Запишіться сьогодні на <span>безкоштовий замір</span></div>
+            <input class="form__input" name="name" type="text" placeholder="Введіть ваше і'мя">
+            <input class="form__input" name="phone" type="tel" placeholder="Введіть ваш телефон">
+            <button aria-label="Визвати майстра">Визвати майстра</button>
+            <span>Ваші дані конфіденційні</span>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Сontacts Section -->
+  <section class="contacts">
+    <div class="container">
+      <h2 class="contacts__title title">Наші контакти</h2>
+      <div class="contacts__inner">
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.259120810992!2d24.029425715526102!3d49.83758853921459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6ed07b8403%3A0xeb839f94d0e3f7a3!2z0L_RgNC-0YHQv9C10LrRgiDQqNC10LLRh9C10L3QutCwLCDQm9GM0LLRltCyLCDQm9GM0LLRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDc5MDAw!5e0!3m2!1suk!2sua!4v1606761466924!5m2!1suk!2sua" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="contacts__info">
+          <div class="contact__item">
+            <h3 class="contact__item-title">Адреса:</h3>
+            <address>м. Львів проспект Шевченка 500</address>
+          </div>
+          <div class="contact__item">
+            <h3 class="contact__item-title">Телефон:</h3>
+            <a href="tel:88005032020" class="contact__phone">8(800)503-20-20</a>
+          </div>
+          <div class="contact__item">
+            <h3 class="contact__item-title">E-mail:</h3>
+            <a href="mailto:irvawindows@gmail.com" class="contact__email">irvawindows@gmail.com</a>
+          </div>
+          <div class="contact__item">
+            <h3 class="contact__item-title">Графік роботи:</h3>
+            <span class="schedule-hour">9:00 - 18:00 без вихідних</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Question Section -->
+  <section class="questions">
+    <div class="container">
+      <h2 class="questions__title">Залишились запитання?</h2>
+      <button class="questions__button" data-modal="consultation" aria-label="Запитайте у нашого спеціаліста">Запитайте у нашого спеціаліста!</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="copyright">2020 © Вікна Ірвас</p>
+        <a href="#" class="logo footer__logo">
+          <img src="images/src/logo.png" alt="Ірвас">
+        </a>
+        <div class="phone footer__phone">
+          <a href="tel:880050010233" class="phone__num">8(800)500-102-33</a>
+          <button class="order" data-modal="consultation" aria-label="Замовити дзвінок">Замовити дзвінок</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal PopUp-->
+  <div class="overlay">
+    <div class="modal" id="consultation">
+      <div class="modal__close">&times;</div>
+      <form class="order-form" action="#">
+        <div class="form__title">Замовте зараз <span>зворотній дзвінок</span></div>
+        <input class="form__input" name="name" type="text" placeholder="Введіть ваше і'мя">
+        <input class="form__input" name="phone" type="tel" placeholder="Введіть ваш телефон">
+        <button aria-label="Надіслати заявку">Надіслати заявку</button>
+        <span>Ваші дані конфіденційні</span>
+      </form>
+    </div>
+    <div class="modal" id="calculation">
+      <div class="modal__close">&times;</div>
+      <form class="order-form" action="#">
+        <div class="form__title">Розрахувати вартість<span>зі знижкою</span></div>
+        <input class="form__input" name="name" type="text" placeholder="Введіть ваше і'мя">
+        <input class="form__input" name="phone" type="tel" placeholder="Введіть ваш телефон">
+        <button aria-label="Розрахувати вартість">Розрахувати вартість</button>
+        <span>Ваші дані конфіденційні</span>
+      </form>
+    </div>
+  </div>
+  <div class="modal modal__mini" id="thanks">
+    <div class="modal__close">&times;</div>
+    <div class="form__title">Дякуємо за Ваше замовлення!</div>
+    <p class="modal__text">Наш менеджер зв'яжеться з Вами найближчим часом</p>
+  </div>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
