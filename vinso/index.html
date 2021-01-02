@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gulp 4</title>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/dest/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/dest/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/dest/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/images/dest/favicon/site.webmanifest">
+  <!-- Style Css -->
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-inner">
+          <a href="#" class="header__logo">
+            <img src="images/dest/logo.png" alt="Logo">
+          </a>
+          <div class="header__top-info">
+            <div class="header__contact contact ">
+              <a href="mailto:support@gmail.com" class="contact__email">support@gmail.com</a>
+              <a href="tel:+12126839756" class="contact__phone">+1(212)683-97-56</a>
+            </div>
+            <div class="header__schedule schedule">
+              Mon - Sat : 8:00am - 5:00pm
+              <span>Sunday: Closed</span>
+            </div>
+            <button class="button header__btn">Get a quote</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <div class="header__bottom-inner">
+          <button class="menu__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link menu__link--current">Home</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">About</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Pricing</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Team</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Blog</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <form class="header__search">
+            <input type="search" placeholder="Enter keyword">
+            <button type="submit"></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content rellax" data-rellax-speed="5">
+        <span class="hero__subtitle">What your insurer should deliver.</span>
+        <h1 class="hero__title">With the Help of insurance,
+          you are Stronger</h1>
+        <button class="button">Find An Agent</button>
+      </div>
+    </div>
+  </section>
+  <section class="features">
+    <div class="container">
+      <div class="features__inner">
+        <div class="features__item">
+          <span class="features__subtitle subtitle">Our Best Features</span>
+          <h2 class="features__title title">Our feature services</h2>
+          <p class="features__text">Lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua facilisis.</p>
+          <button class="button features__btn">Find an Agent</button>
+        </div>
+        <div class="features__item features__item-secure">
+          <h3 class="features__item-title features__item-title--secure">Secure Account With Gurantee</h3>
+          <p class="features__item-text">
+            Mipsum dolor siter amet, consectetur adipiscing eiusmod tempor.
+          </p>
+        </div>
+        <div class="features__item features__item-team">
+          <h3 class="features__item-title features__item-title--team">Dedicated Team With Strong Skill</h3>
+          <p class="features__item-text">
+            Mipsum dolor siter amet, consectetur adipiscing eiusmod tempor.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="services">
+    <div class="container">
+      <span class="services__subtitle subtitle">Insurance services</span>
+      <h2 class="services__title title">Our feature services</h2>
+      <div class="services__inner">
+        <a href="#" class="services__item services__item-1">
+          <h3 class="services__item-title">Home insurance</h3>
+          <p class="services__item-text">Protect your house so it always
+            feels like home.</p>
+        </a>
+        <a href="#" class="services__item services__item-2">
+          <h3 class="services__item-title">Travel insurance</h3>
+          <p class="services__item-text">Protect your house so it always
+            feels like home.</p>
+        </a>
+        <a href="#" class="services__item services__item-3">
+          <h3 class="services__item-title">Life insurance</h3>
+          <p class="services__item-text">Protect your house so it always
+            feels like home.</p>
+        </a>
+        <a href="#" class="services__item services__item-4">
+          <h3 class="services__item-title">Car insurance</h3>
+          <p class="services__item-text">Protect your house so it always
+            feels like home.</p>
+        </a>
+        <a href="#" class="services__item services__item-5">
+          <h3 class="services__item-title">Health insurance</h3>
+          <p class="services__item-text">Protect your house so it always
+            feels like home.</p>
+        </a>
+        <a href="#" class="services__item services__item-6">
+          <h3 class="services__item-title">Business insurance</h3>
+          <p class="services__item-text">Protect your house so it always
+            feels like home.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="advantage">
+    <div class="container">
+      <div class="advantage__inner">
+        <div class="advantage__item">
+          <div class="advantage__count">3258</div>
+          <span class="advantage__text">Satisfied Clients</span>
+        </div>
+        <div class="advantage__item">
+          <div class="advantage__count">30</div>
+          <span class="advantage__text">Years Of Experience</span>
+        </div>
+        <div class="advantage__item">
+          <div class="advantage__count">145</div>
+          <span class="advantage__text">Positive Solutions</span>
+        </div>
+        <div class="advantage__item">
+          <div class="advantage__count">258</div>
+          <span class="advantage__text">Insurances</span>
+        </div>
+        <div class="advantage__item">
+          <div class="advantage__count">1258</div>
+          <span class="advantage__text">Businesses Growing</span>
+        </div>
+      </div>
+      <h2 class="advantage__title title">Not sure what you need?
+        Find an agent now
+      </h2>
+      <div class="advantage__box">
+        <div class="advantage__box-inner">
+          <div class="advantage__box-item advantage__phone">
+            <h3 class="advantage__phone-title">Call us now</h3>
+            <a href="tel:+12126839756" class="advantage__phone-number">+ 1 212-683-9756</a>
+          </div>
+          <div class="advantage__box-item advantage__subscribe">
+            <h3 class="advantage__subscribe-title">Sign up for emails</h3>
+            <form class="advantage__form" action="#">
+              <input class="advantage__input input" type="email" name="email" placeholder="Enter your email" data-validate-field="email">
+              <button class="advantage__btn"></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="team">
+    <div class="container">
+      <span class="team__subtitle subtitle">Our Team</span>
+      <h2 class="team__title title">Meet our agent</h2>
+      <div class="team__inner">
+        <div class="team__item">
+          <img class="team__item-img" src="images/dest/our-team/user1.jpg" alt="#">
+       <div class="team__item-info">
+            <h3 class="team__item-title">Mancherwan Kolin</h3>
+            <h4 class="team__item-position">Health agent</h4>
+            <ul class="team__social">
+              <li class="team__social-item">
+                <a href="#" class="team__social-link social__facebook"></a>
+              </li>
+              <li class="team__social-item">
+                <a href="#" class="team__social-link social__twitter"></a>
+              </li>
+              <li class="team__social-item">
+                <a href="#" class="team__social-link social__instagram"></a>
+              </li>
+              <li class="team__social-item">
+                <a href="#" class="team__social-link social__dribbble"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="team__item">
+          <img class="team__item-img" src="images/dest/our-team/user2.jpg" alt="#">
+        <div class="team__item-info">
+            <h3 class="team__item-title">Austin Caldwell</h3>
+            <h4 class="team__item-position">Health agent</h4>
+            <ul class="team__social">
+              <li class="team__social-item">
+                <a href="#" class="team__social-link social__facebook"></a>
+              </li>
+              <li class="team__social-item">
+                <a href="#" class="team__social-link social__twitter"></a>
+              </li>
+              <li class="team__social-item">
+                <a href="#" class="team__social-link social__instagram"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="team__item">
+          <img class="team__item-img" src="images/dest/our-team/user3.jpg" alt="#">
+          <div class="team__item-info">
+            <h3 class="team__item-title">Christina Newman</h3>
+            <h4 class="team__item-position">Health agent</h4>
+            <ul class="team__social">
+              <li class="team__social-item">
+                <a href="#" class="team__social-link social__facebook"></a>
+              </li>
+              <li class="team__social-item">
+                <a href="#" class="team__social-link social__twitter"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="team__item">
+          <img class="team__item-img" src="images/dest/our-team/user4.jpg" alt="#">
+          <div class="team__item-info">
+            <h3 class="team__item-title">Gilbert Daniels</h3>
+            <h4 class="team__item-position">Health agent</h4>
+            <ul class="team__social">
+              <li class="team__social-item">
+                <a href="#" class="team__social-link social__facebook"></a>
+              </li>
+              <li class="team__social-item">
+                <a href="#" class="team__social-link social__twitter"></a>
+              </li>
+              <li class="team__social-item">
+                <a href="#" class="team__social-link social__instagram"></a>
+              </li>
+              <li class="team__social-item">
+                <a href="#" class="team__social-link social__dribbble"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="team__item">
+          <img class="team__item-img" src="images/dest/our-team/user1.jpg" alt="#">
+         <div class="team__item-info">
+            <h3 class="team__item-title">Adelaide Hunter</h3>
+            <h4 class="team__item-position">Health agent</h4>
+            <ul class="team__social">
+              <li class="team__social-item">
+                <a href="#" class="team__social-link social__facebook"></a>
+              </li>
+              <li class="team__social-item">
+                <a href="#" class="team__social-link social__twitter"></a>
+              </li>
+              <li class="team__social-item">
+                <a href="#" class="team__social-link social__instagram"></a>
+              </li>
+              <li class="team__social-item">
+                <a href="#" class="team__social-link social__dribbble"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ <section class="testimonial"> 
+    <div class="container">
+      <span class="testimonial__subtitle subtitle">Testimonial</span>
+      <h2 class="testimonial__title title">What client say?</h2>
+      <div class="testimonial__inner">
+        <div class="testimonial__item">
+          <div class="testimonial__text">
+            Dolor amet, consectetur adipiscing elit consequat elit. Mauris hendrerit fringilla ligula, nec congue leo pharetra in. Quisque commodo vehicula justo, tincidunt vehicula.
+          </div>
+          <div class="testimonial__author">
+            <div class="testimonial__author-avatar">
+              <img src="images/dest/testimonials/testimonial-author-1.jpg" alt="">
+            </div>
+            <div class="testimonial__author-name">Lincoln Shinler
+              <span class="testimonial__rating"></span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial__item">
+          <div class="testimonial__text">
+            Adipiscing elit consequat elit. Mauris hendrerit fringilla ligula, nec congue leo pharetra in. Quisque commodo vehicula justo, tincidunt vehicula consequat vel lorrem.
+          </div>
+          <div class="testimonial__author">
+            <div class="testimonial__author-avatar">
+              <img src="images/dest/testimonials/testimonial-author-2.jpg" alt="">
+            </div>
+            <div class="testimonial__author-name">Jonh Doe
+              <span class="testimonial__rating"></span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial__item">
+          <div class="testimonial__text">
+            Dolor amet, consectetur adipiscing elit consequat elit. Mauris hendrerit fringilla ligula, nec congue leo pharetra in. Quisque commodo vehicula justo, tincidunt vehicula.
+          </div>
+          <div class="testimonial__author">
+            <div class="testimonial__author-avatar">
+              <img src="images/dest/testimonials/testimonial-author-3.jpg" alt="">
+            </div>
+            <div class="testimonial__author-name">Casy Rowse
+              <span class="testimonial__rating"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial__item">
+          <div class="testimonial__text">
+            Dolor amet, consectetur adipiscing elit consequat elit. Mauris hendrerit fringilla ligula, nec congue leo pharetra in. Quisque commodo vehicula justo, tincidunt vehicula.
+          </div>
+          <div class="testimonial__author">
+            <div class="testimonial__author-avatar">
+              <img src="images/dest/testimonials/testimonial-author-1.jpg" alt="">
+            </div>
+            <div class="testimonial__author-name">Linda Shid
+              <span class="testimonial__rating"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a href="#" class="footer__logo">
+          <img src="images/dest/footer/logo-light.png" alt="#">
+        </a>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a href="#" class="social__link social__link-facebook"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link-twitter"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link-pinterest"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link-linkedin"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__middle">
+        <div class="footer__middle-item">
+          <h3 class="footer__middle-title">Company</h3>
+          <ul class="footer__middle-list footer__list">
+            <li class="footer__list-item">
+              <a href="#">About Us</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#">Company</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#">Press & Blog</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#">Faq</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__middle-item">
+          <h3 class="footer__middle-title">Resources</h3>
+          <ul class="footer__middle-list footer__list">
+            <li class="footer__list-item">
+              <a href="#">Home Insurance</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#">Travel Insurance</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#">Car Insurance</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#">Business Insurance</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#">Heal Insurance</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__middle-item">
+          <h3 class="footer__middle-title">Company</h3>
+          <ul class="footer__middle-list footer__list">
+            <li class="footer__list-item">
+              <a href="#">Home</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#">Drupal Themes</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#">WordPress Themes</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#">Support</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#">Services</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__middle-item">
+          <h3 class="footer__middle-title">Contact Info</h3>
+          <address>Address : 15 Division Street, New York,
+          NY 12032, United States of America</address>
+          <a href="tel:+0123456789" class="footer__phone"><span>Phone:</span> +0 (123) 456789</a>
+          <a href="mailto:support@gmail.com" class="footer__email"><span>Email:</span> support@gmail.com</a>
+          <a href="fax:+8123456789" class="footer__fax"><span>Fax:</span> +8(123)456789</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2020. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="overlay">
+    <div class="modal">
+      <button class="close">x</button>
+      <form action="#" class="find-agent">
+        <h2 class="find-agent__title">Find an Agent</h2>
+        <input class="input input__phone" type="tel" placeholder="Enter Your Phone" data-validate-field="tel" name="tel">
+        <input class="input" type="email" data-validate-field="email" placeholder="Enter Your Email" name="email">
+        <button  class="button" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
