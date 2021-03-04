@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>WordPress Starter</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <a href="#" class="logo">
+        <img src="images/logo.svg" alt="#">
+      </a>
+      <div class="header__box">
+        <div class="header__contact">
+          <div class="header__contact-item">
+            <img class="header__contact-img" src="images/phone.svg" alt="#">
+            <a href="tel:+380985577888" class="header__link">+38(098)55-77-888</a>
+          </div>
+          <div class="header__contact-item header__contact-item--schedule">
+            <img class="header__contact-img" src="images/clock.svg" alt="#">
+            <span class="header__link">Пн-Пт 10:00-18.00</span>
+          </div>
+          <div class="header__contact-item header__contact-item--email">
+            <img class="header__contact-img" src="images/email.svg" alt="#">
+            <a href="maito:buhone@com.u" class="header__link">buhone@com.ua</a>
+          </div>
+          <div class="header__contact-item header__contact-item--location">
+            <img class="header__contact-img" src="images/location.svg" alt="#">
+            <address class="header__link">пр.Шевченка 130</address>
+          </div>
+        </div>
+        <div class="burger">
+          <span></span>
+        </div>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#services">Послуги</a>
+            </li>
+            <li class="menu__item">
+              <a href="#about">Про нас</a>
+            </li>
+            <li class="menu__item">
+              <a href="#customers">Клієнти</a>
+            </li>
+            <li class="menu__item">
+              <a href="#reviews">Відгуки</a>
+            </li>
+            <li class="menu__item">
+              <a href="#contacts">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="container-fluid hero hero__slider">
+        <div class="hero__item" style="background-image: url('/images/1.jpg');">
+          <div class="container hero__container">
+            <h1 class="hero__title">
+              Бухгалтерські послуги у Львові
+            </h1>
+            <button class="btn-reset btn hero__btn">Замовити консультацію</button>
+          </div>
+        </div>
+        <div class="hero__item" style="background-image: url('/images/2.jpg');">
+          <div class="container hero__container">
+            <h1 class="hero__title">
+              Юридичні послуги у Львові
+            </h1>
+            <button class="btn-reset btn hero__btn">Замовити консультацію</button>
+          </div>
+        </div>
+        <div class="hero__item" style="background-image: url('/images/3.jpg');">
+          <div class="container hero__container">
+            <h1 class="hero__title ">
+              Фінансові послуги у Львові
+            </h1>
+            <button class="btn-reset btn hero__btn">Замовити консультацію</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="services" id="services">
+      <div class="container services__container">
+        <div class="services__subtitle subtitle">Наші послуги</div>
+        <h2 class="services__title title">Ми спеціалізуємось</h2>
+        <div class="services__inner">
+          <div class="services__item">
+            <div class="services__item-icon">
+              <img src="images/handshake.svg" alt="#">
+            </div>
+            <h3 class="services__item-title">Реєстрація підприємця (ФОП)</h3>
+            <p class="services__item-text">
+              Підбір КВЕДів, реєстрація в ЄДР, підготовка пакету документів,
+              отримання витягу, реєстрація книги обліку і витрат.
+            </p>
+          </div>
+          <div class="services__item">
+          <div class="services__item-icon">
+            <img src="images/expand-arrows.svg" alt="#">
+          </div>
+            <h3 class="services__item-title">Запити в державні органи</h3>
+            <p class="services__item-text">
+              Підготовка листів, отримання довідок, витягу з держреєстру, звірка з податковою.
+            </p>
+          </div>
+          <div class="services__item">
+            <div class="services__item-icon">
+              <img src="images/user-tie.svg" alt="#">
+            </div>
+            <h3 class="services__item-title">Робота з контрагентами</h3>
+            <p class="services__item-text">
+              Звірка, підготовка, відправка документів контрагентам.
+            </p>
+          </div>
+          <div class="services__item">
+          <div class="services__item-icon">
+            <img src="images/support.svg" alt="#">
+          </div>
+            <h3 class="services__item-title">Податковий консалтинг</h3>
+            <p class="services__item-text">
+              Розширені консультації з управлінського та податкового обліку для клієнтів.
+            </p>
+          </div>
+          <div class="services__item">
+            <div class="services__item-icon">
+              <img src="images/money-check.svg" alt="#">
+            </div>
+            <h3 class="services__item-title">Перевірка бухгалтерського обліку</h3>
+            <p class="services__item-text">
+              Перевірка наявної звітності та первинної документації.
+            </p>
+          </div>
+          <div class="services__item">
+            <div class="services__item-icon">
+              <img src="images/hand-holding.svg" alt="#">
+            </div>
+            <h3 class="services__item-title">Ведення обліку іноземних інвестицій</h3>
+            <p class="services__item-text">
+              Необхідна складова бухгалтерського та податкового обліку для представництв іноземних компаній в Україні.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="about" id="about">
+      <div class="container about__container">
+       <div class="about__content">
+          <div class="subtitle about__subtitle">Про нас</div>
+          <h2 class="about__title title">Компанія <span>BuhOne</span></h2>
+          <p class="about__text">
+            У&nbsp;нас працюють тільки штатні фахівці на&nbsp;постійній основі. Кожен фахівець компанії пройшов перевірку знань і&nbsp;рішень нестандартних завдань в&nbsp;обліку під контролем сертифікованого аудитора. Всі співробітники щотижня підвищують свої знання на&nbsp;семінарах щодо змін в&nbsp;податковому законодавстві.Повна відповідальність за&nbsp;правильність обліку закріплена договором. Ми&nbsp;гарантуємо повну конфіденційність Ваших даних і&nbsp;якість виконання нашої роботи.
+          </p>
+       </div>
+        <div class="about__numbers numbers">
+          <div class="numbers__item">
+            <span class="numbers__count" data-count="40">0</span>
+            <h3 class="numbers__title">
+              постійних
+              клієнтів
+            </h3>
+          </div>
+          <div class="numbers__item">
+            <span class="numbers__count" data-count="25">0</span>
+            <h3 class="numbers__title">
+              кваліфікованих
+              фахівців
+            </h3>
+          </div>
+          <div class="numbers__item">
+            <span class="numbers__count" data-count="300">0</span>
+            <h3 class="numbers__title">
+              годин
+              консультацій в рік
+            </h3>
+          </div>
+          <div class="numbers__item">
+            <span class="numbers__count" data-count="20">0</span>
+            <h3 class="numbers__title">
+              років досвіду в бухгалтерії
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="customers" id="customers">
+      <div class="container customers__container">
+        <div class="subtitle customers__subtitle">Наші клієнти</div>
+        <h2 class="customers__title title">З нами працюють</h2>
+        <div class="customers__slider">
+          <img src="images/logo-1.svg" alt="#" class="customers__item">
+          <img src="images/logo-2.svg" alt="#" class="customers__item">
+          <img src="images/logo-3.svg" alt="#" class="customers__item">
+          <img src="images/logo-4.svg" alt="#" class="customers__item">
+          <img src="images/logo-5.svg" alt="#" class="customers__item">
+          <img src="images/logo-6.svg" alt="#" class="customers__item">
+        </div>
+      </div>
+    </section>
+    <section class="reviews" id="reviews">
+      <div class="container__reviews container">
+        <div class="subtitle reviews__subtitle">Наші відгуки</div>
+        <h2 class="reviews__title title">Ваші подяки</h2>
+        <div class="reviews__inner">
+          <div class="reviews__item review">
+            <p class="review__text">
+              Рекомендую команду маркетологів. Замовляв у них маркетинговий аналіз сайту. Отримав реально корисний результат. Маркетинговий аналіз - це детальний документ, де все розписано чітко і по суті. Отримані висновки і рекомендації ми обговорили і виконали.
+            </p>
+            <div class="review__author">
+              <div class="review__img">
+                <img src="images/reviews1.jpg" alt="#">
+              </div>
+              <div class="review__name">
+                Валерія
+                <span>Керівник ТОВ "Один"</span>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__item review">
+            <p class="review__text">
+              Високо професійна команда, що допомогла мені вивільний мій час та збільшити прибути моєї компанії. Рекомендую!
+            </p>
+            <div class="review__author">
+              <div class="review__img">
+                <img src="images/reviews2.jpg" alt="#">
+              </div>
+              <div class="review__name">
+                Олег
+                <span>Керівник ТОВ "Два"</span>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__item review">
+            <p class="review__text">
+            Всеукраїнської асоціації імпортерів м’яса та м’ясопродукції. Рекомендую експертів Агенції економічних послуг як надійних партнерів, професіоналів у напрямку маркетингових досліджень, відповідальних людей, що знають свою справу, дбають про інтереси клієнта.
+            </p>
+            <div class="review__author">
+              <div class="review__img">
+                <img src="images/reviews3.jpg" alt="#">
+              </div>
+              <div class="review__name">
+                Андрій
+                <span>Керівник ТОВ "Три"</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacts" style="background-image: url('images/contact-bg.jpg');">
+      <div class="container contact__container">
+        <div class="contact__column contact__column--first">
+          <h2 class="title contact__title">Звязатиcь з нами</h2>
+          <p class="contact__text">
+            Якщо у Вас виникли запитання? Напишіть нам - ми відповімо найближчим часом!
+          </p>
+          <div class="contact__box">
+            <div class="contact__item">
+              <img src="images/phone-light.svg" alt="#" class="contact__item-img">
+              <a href="tel:+380985577888" class="contact__link">+38(098)55-77-888</a>
+            </div>
+            <div class="contact__item">
+              <img src="images/email-light.svg" alt="#" class="contact__item-img">
+              <a href="mailto:buhone@com.ua" class="contact__link">buhone@com.ua</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact__column">
+          <form action="#" class="contact__form">
+            <div class="form__col form__col--name">
+              <label class="contact__form-label" for="name" >Ім'я</label>
+              <input class="contact__form-input" type="text" id="name" name="name" placeholder="Ваше ім'я" data-validate-field="name">
+            </div>
+            <div class="form__col form__col--surname">
+            <label class="contact__form-label" for="surname">Прізвище</label>
+            <input class="contact__form-input" type="text" id="surname" name="surname" placeholder="Ваше прізвище" data-validate-field="surname">
+            </div>
+            <div class="form__col--wide">
+              <label class="contact__form-label--textarea" for="message">Повідомлення</label>
+              <textarea class="contact__textarea" name="message" id="message" placeholder="Ваше повідомлення" data-validate-field="message"></textarea>
+            </div>
+            <button class="btn-reset btn contact__btn">Надіслати повідомлення</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__copy">2021 (с) Всі права захищені.</div>
+      <div class="footer__link">Cайт створено <a href="#">www.website.com</a></div>
+    </div>
+  </footer>
+  <div class="overlay">
+    <div class="modal">
+      <div class="modal__close">x</div>
+      <form class="order-form" action="#">
+        <div class="form__title">Замовити консультацію</div>
+        <input type="text" name="name" class="form__input" placeholder="Ваше ім'я" data-validate-field="name">
+        <input type="tel" name="tel" class="form__input" placeholder="Контактний телефон" data-validate-field="tel">
+        <button class="btn-reset btn modal-btn">Надіслати заявку</button>
+      </form>
+    </div>
+  </div>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.inputmask.min.js"></script>
+  <script src="js/just-validate.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
