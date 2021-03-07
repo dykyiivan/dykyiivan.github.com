@@ -141,7 +141,7 @@ $(function () {
 
   new JustValidate(".order-form", {
     rules: {
-      name: {
+      username: {
         required: true,
         minLength: 3,
         maxLength: 20,
@@ -153,7 +153,7 @@ $(function () {
       },
     },
     messages: {
-      name: {
+      username: {
         required: "Введіть Ваше імя",
         minLength: "Поле має містити щонайменше 3 символи",
       },
