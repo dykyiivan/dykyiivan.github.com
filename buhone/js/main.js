@@ -2,7 +2,6 @@ $(function () {
 
   $(".burger").on("click", function (e) {
     $(".burger,.menu").toggleClass("active");
-    $("body").toggleClass("lock");
   });
   $(".menu__item a").on("click", function (e) {
     $(".burger,.menu").toggleClass("active");
