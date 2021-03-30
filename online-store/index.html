@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Online Store Maroni</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="site-container">
+    <header class="header">
+      <div class="header__top">
+        <div class="header__top-container container">
+          <div class="header__top-left">
+            <div class="header__top-box phone">
+              <img class="phone__icon header__icon" src="img/icons/phone-alt-solid.svg" alt="Phone">
+              <span>Hotline:</span>
+              <a href="tel:1666777888" class="phone__link">1-666-777-888</a>
+            </div>
+            <div class="header__top-box location">
+              <img class="location__icon header__icon" src="img/icons/map-marker-alt.svg" alt="Location">
+              <span class="location__link">1429 Netus Rd, NY 48247</span>
+            </div>
+          </div>
+          <div class="header__top-right">
+            <div class="header__top-box order">
+              <img class="order__icon header__icon" src="img/icons/paper-plane-regular.svg" alt="Online Order">
+              <span class="order__link">Online order and shipped today</span>
+            </div>
+            <div class="header__top-box user-box">
+              <img class="user-box__icon header__icon" src="img/icons/cog-solid.svg" alt="User Info">
+              <a href="#" class="user-box__login">Login</a>
+              <span>or</span>
+              <a href="#" class="user-box__register">Register</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom container">
+        <a href="#" class="logo header__logo">
+          <img src="img/header/logo.png" alt="logo">
+        </a>
+        <form action="#" class="form header__form">
+          <div class="search-form">
+            <div class="select-custom">
+              <select name="cat" id="cat">
+                <option value>All Categories</option>
+                <option value="#">Office Electronics</option>
+                <option value="#">Tablet</option>
+                <option value="#">Computer Components</option>
+                <option value="#">Networking</option>
+                <option value="#">Memory Cards & SSD</option>
+                <option value="#">Cables & Connector</option>
+                <option value="#">Mini PC</option>
+              </select>
+            </div>
+            <input type="search" class="search-form__input" placeholder="Searching keywords...">
+            <button class="btn-reset form__btn" aria-label="Search Product">
+              <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-search fa-w-16 fa-9x">
+                <path fill="currentColor" d="M508.5 481.6l-129-129c-2.3-2.3-5.3-3.5-8.5-3.5h-10.3C395 312 416 262.5 416 208 416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c54.5 0 104-21 141.1-55.2V371c0 3.2 1.3 6.2 3.5 8.5l129 129c4.7 4.7 12.3 4.7 17 0l9.9-9.9c4.7-4.7 4.7-12.3 0-17zM208 384c-97.3 0-176-78.7-176-176S110.7 32 208 32s176 78.7 176 176-78.7 176-176 176z" class=""></path>
+              </svg>
+            </button>
+          </div>
+        </form>
+        <ul class="user-action">
+          <li class="user-action__item user-action__item--search">
+            <button class="btn-reset form__btn form__btn--search" aria-label="Search Product">
+              <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-search fa-w-16 fa-9x">
+                <path fill="currentColor" d="M508.5 481.6l-129-129c-2.3-2.3-5.3-3.5-8.5-3.5h-10.3C395 312 416 262.5 416 208 416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c54.5 0 104-21 141.1-55.2V371c0 3.2 1.3 6.2 3.5 8.5l129 129c4.7 4.7 12.3 4.7 17 0l9.9-9.9c4.7-4.7 4.7-12.3 0-17zM208 384c-97.3 0-176-78.7-176-176S110.7 32 208 32s176 78.7 176 176-78.7 176-176 176z" class=""></path>
+              </svg>
+            </button>
+          </li>
+          <li class="user-action__item user-action__item--favorite">
+            <img class="favorite__icon" src="img/icons/heart.svg" alt="Favorites">
+            <a href="#" class="user-action__link">Favorites</a>
+            <span class="favorite__count">2</span>
+          </li>
+          <li class="user-action__item user-action__item--cart">
+            <img class="cart__icon" src="img/icons/shopping-cart.svg" alt="Cart Icon">
+            <a href="#" class="user-action__link user-action__link--dropdown cart">$29.58 <span>(USD)</span></a>
+          </li>
+        </ul>
+
+        <div class="dropdown-cart">
+          <div class="dropdown-cart__inner">
+            <div class="dropdown-cart__content">
+              <h4 class="dropdown-cart__title">Shopping Cart</h4>
+              <button class="btn-reset close-cart" aria-label="Close Cart">x</button>
+              <ul class="dropdown-cart__list">
+                <li class="dropdown-cart__item">
+                  <a href="#" class="dropdown-cart__link prod-cart">
+                    <img class="prod-cart__img" src="img/header/1.jpg" alt="#">
+                    <div class="prod-cart__content">
+                      <h3 class="prod-cart__title">Flared Shif Dress</h3>
+                      <div class="prod-cart__quantity">1 x </div>
+                      <div class="prod-cart__price">$12</div>
+                    </div>
+                    <span class="btn-reset dropdown-cart__close" aria-label="Delete Product">x</span>
+                  </a>
+                </li>
+                <li class="dropdown-cart__item">
+                  <a href="#" class="dropdown-cart__link prod-cart">
+                    <img class="prod-cart__img" src="img/header/1.jpg" alt="#">
+                    <div class="prod-cart__content">
+                      <h3 class="prod-cart__title">Flared Shif Dress</h3>
+                      <div class="prod-cart__quantity">1 x </div>
+                      <div class="prod-cart__price">$12</div>
+                    </div>
+                    <span class="btn-reset dropdown-cart__close" aria-label="Delete Product">x</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="group__btn">
+              <button class="btn-reset btn btn-secondary" aria-label="View Cart">View Cart</button>
+              <button class="btn-reset btn btn-secondary" aria-label="Checkout">Checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="menu">
+        <div class="burger">
+          <span></span>
+        </div>
+        <ul class="menu__list container">
+          <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+          <li class="menu__item"><a href="catalog.html" class="menu__link">Shop</a></li>
+          <li class="menu__item"><a href="product.html" class="menu__link">Product</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">About Us</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="overlay">
+        <div class="overlay__body">
+          <div class="search">
+            <button class="btn-reset search-mobile__close" aria-label="Close Search-Form">x</button>
+            <form action="#" class="search-mobile">
+              <input type="text" class="search-mobile__input" placeholder="Search">
+              <button class="btn-reset search-mobile__btn" aria-label="Search Product">
+                <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-search fa-w-16 fa-9x">
+                  <path fill="currentColor" d="M508.5 481.6l-129-129c-2.3-2.3-5.3-3.5-8.5-3.5h-10.3C395 312 416 262.5 416 208 416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c54.5 0 104-21 141.1-55.2V371c0 3.2 1.3 6.2 3.5 8.5l129 129c4.7 4.7 12.3 4.7 17 0l9.9-9.9c4.7-4.7 4.7-12.3 0-17zM208 384c-97.3 0-176-78.7-176-176S110.7 32 208 32s176 78.7 176 176-78.7 176-176 176z" class=""></path>
+                </svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="banner-section">
+        <div class="banner-section__container container">
+          <a href="#" class="banner-section__slide">
+            <img src="img/banners/banner1.jpg" alt="Banner 1">
+          </a>
+          <a href="#" class="banner-section__slide">
+            <img src="img/banners/banner2.jpg" alt="Banner 2">
+          </a>
+        </div>
+      </div>
+      <section class="advantages">
+        <div class="container">
+          <div class="advantages__inner">
+            <div class="advantages__item">
+              <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="usd-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="svg-inline--fa fa-usd-circle fa-w-16 fa-9x">
+                <path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 464c-119.1 0-216-96.9-216-216S128.9 40 248 40s216 96.9 216 216-96.9 216-216 216zm40.3-221.3l-72-20.2c-12.1-3.4-20.6-14.4-20.6-26.7 0-15.3 12.8-27.8 28.5-27.8h45c11.2 0 21.9 3.6 30.6 10.1 3.2 2.4 7.6 2 10.4-.8l11.3-11.5c3.4-3.4 3-9-.8-12-14.6-11.6-32.6-17.9-51.6-17.9H264v-40c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8v40h-7.8c-33.3 0-60.5 26.8-60.5 59.8 0 26.6 18.1 50.2 43.9 57.5l72 20.2c12.1 3.4 20.6 14.4 20.6 26.7 0 15.3-12.8 27.8-28.5 27.8h-45c-11.2 0-21.9-3.6-30.6-10.1-3.2-2.4-7.6-2-10.4.8l-11.3 11.5c-3.4 3.4-3 9 .8 12 14.6 11.6 32.6 17.9 51.6 17.9h5.2v40c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-40h7.8c33.3 0 60.5-26.8 60.5-59.8-.1-26.6-18.1-50.2-44-57.5z" class=""></path>
+              </svg>
+              <div class="advantages__content">
+                <h3 class="advantages__title">Free Shiping</h3>
+                <p class="advantages__text">Free order over $300</p>
+              </div>
+            </div>
+            <div class="advantages__item">
+              <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="credit-card" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-credit-card fa-w-18 fa-9x">
+                <path fill="currentColor" d="M528 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM48 64h480c8.8 0 16 7.2 16 16v48H32V80c0-8.8 7.2-16 16-16zm480 384H48c-8.8 0-16-7.2-16-16V224h512v208c0 8.8-7.2 16-16 16zm-336-84v8c0 6.6-5.4 12-12 12h-72c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12zm192 0v8c0 6.6-5.4 12-12 12H236c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12z" class=""></path>
+              </svg>
+              <div class="advantages__content">
+                <h3 class="advantages__title">Accept Payments</h3>
+                <p class="advantages__text">Visa, Paypal, Master</p>
+              </div>
+            </div>
+            <div class="advantages__item">
+              <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="calendar-minus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-calendar-minus fa-w-14 fa-9x">
+                <path fill="currentColor" d="M400 64h-48V12c0-6.6-5.4-12-12-12h-8c-6.6 0-12 5.4-12 12v52H128V12c0-6.6-5.4-12-12-12h-8c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM48 96h352c8.8 0 16 7.2 16 16v48H32v-48c0-8.8 7.2-16 16-16zm352 384H48c-8.8 0-16-7.2-16-16V192h384v272c0 8.8-7.2 16-16 16zm-92-128H140c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8c0 6.6-5.4 12-12 12z" class=""></path>
+              </svg>
+              <div class="advantages__content">
+                <h3 class="advantages__title">30 Day Return</h3>
+                <p class="advantages__text">30 day guarantee</p>
+              </div>
+            </div>
+            <div class="advantages__item">
+              <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="headphones" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-headphones fa-w-16 fa-9x">
+                <path fill="currentColor" d="M256 32C114.517 32 0 146.497 0 288v51.429a16.003 16.003 0 0 0 8.213 13.978l23.804 13.262c-.005.443-.017.886-.017 1.331 0 61.856 50.144 112 112 112h24c13.255 0 24-10.745 24-24V280c0-13.255-10.745-24-24-24h-24c-49.675 0-91.79 32.343-106.453 77.118L32 330.027V288C32 164.205 132.184 64 256 64c123.796 0 224 100.184 224 224v42.027l-5.547 3.09C459.79 288.343 417.676 256 368 256h-24c-13.255 0-24 10.745-24 24v176c0 13.255 10.745 24 24 24h24c61.856 0 112-50.144 112-112 0-.445-.012-.888-.017-1.332l23.804-13.262A16.002 16.002 0 0 0 512 339.428V288c0-141.482-114.497-256-256-256zM144 288h16v160h-16c-44.112 0-80-35.888-80-80s35.888-80 80-80zm224 160h-16V288h16c44.112 0 80 35.888 80 80s-35.888 80-80 80z" class=""></path>
+              </svg>
+              <div class="advantages__content">
+                <h3 class="advantages__title">24/7</h3>
+                <p class="advantages__text">Support every time</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bestseller">
+        <div class="bestseller__container container">
+          <div class="bestseller__top">
+            <h2 class="bestseller__title section-title">Best Seller</h2>
+            <a href="#" class="bestseller__link" aria-label="View All">View All</a>
+          </div>
+          <div class="bestseller__inner">
+            <div class="bestseller__column tabs">
+              <ul class="bestseller__cat-list tabs-nav">
+                <li class="bestseller__cat-item">
+                  <a href="#tabs-1" class="bestseller__cat-link">Electric</a>
+                </li>
+                <li class="bestseller__cat-item">
+                  <a href="#tabs-2" class="bestseller__cat-link">Cookware</a>
+                </li>
+                <li class="bestseller__cat-item">
+                  <a href="#tabs-3" class="bestseller__cat-link">Bakeware</a>
+                </li>
+                <li class="bestseller__cat-item">
+                  <a href="#tabs-4" class="bestseller__cat-link">Kitchen Tools</a>
+                </li>
+                <li class="bestseller__cat-item">
+                  <a href="#tabs-5" class="bestseller__cat-link">Cutlery</a>
+                </li>
+                <li class="bestseller__cat-item">
+                  <a href="#tabs-6" class="bestseller__cat-link">Outdoor</a>
+                </li>
+                <li class="bestseller__cat-item">
+                  <a href="#tabs-7" class="bestseller__cat-link">Tabletop</a>
+                </li>
+              </ul>
+            </div>
+            <div class="bestseller__column--lg tabs__content" id="tabs-1">
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product1.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$199.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product1.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$199.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product1.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$199.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product1.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$199.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product1.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$199.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product1.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen </h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$199.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+            </div>
+            <div class="bestseller__column--lg tabs__content" id="tabs-2">
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product2.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$99.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product2.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB!</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$109.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product2.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB!</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$39.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product2.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB!</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$150.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product2.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB!</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$70.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product2.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen </h3>
+                </a>
+                <p class="product__info">$80.00</p>
+                <div class="product__rating">Рейтинг</div>
+              </div>
+              <div class="product__bottom">
+                <button class="btn-reset product__btn product__btn-comparison"></button>
+                <button class="btn-reset product__btn-add">add to cart</button>
+                <button class="btn-reset product__btn product__btn-favorite"></button>
+              </div>
+            </div>
+            <div class="bestseller__column--lg tabs__content" id="tabs-3">
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product4.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$99.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product4.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB!</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$109.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product4.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB!</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$39.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product4.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB!</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$150.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product4.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB!</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$70.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product4.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen </h3>
+                </a>
+                <p class="product__info">$80.00</p>
+                <div class="product__rating">Рейтинг</div>
+              </div>
+              <div class="product__bottom">
+                <button class="btn-reset product__btn product__btn-comparison"></button>
+                <button class="btn-reset product__btn-add">add to cart</button>
+                <button class="btn-reset product__btn product__btn-favorite"></button>
+              </div>
+            </div>
+            <div class="bestseller__column--lg tabs__content" id="tabs-4">
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product3.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$99.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product3.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB!</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$109.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product3.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB!</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$39.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product3.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB!</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$150.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product3.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB!</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$70.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product3.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen </h3>
+                </a>
+                <p class="product__info">$80.00</p>
+                <div class="product__rating">Рейтинг</div>
+              </div>
+              <div class="product__bottom">
+                <button class="btn-reset product__btn product__btn-comparison"></button>
+                <button class="btn-reset product__btn-add">add to cart</button>
+                <button class="btn-reset product__btn product__btn-favorite"></button>
+              </div>
+            </div>
+            <div class="bestseller__column--lg tabs__content" id="tabs-5">
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product5.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$99.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product5.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB!</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$109.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product5.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB!</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$39.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product5.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB!</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$150.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product5.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB!</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$70.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product5.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen </h3>
+                </a>
+                <p class="product__info">$80.00</p>
+                <div class="product__rating">Рейтинг</div>
+              </div>
+              <div class="product__bottom">
+                <button class="btn-reset product__btn product__btn-comparison"></button>
+                <button class="btn-reset product__btn-add">add to cart</button>
+                <button class="btn-reset product__btn product__btn-favorite"></button>
+              </div>
+            </div>
+            <div class="bestseller__column--lg tabs__content" id="tabs-6">
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product6.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$99.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product6.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB!</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$109.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product6.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB!</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$39.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product6.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB!</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$150.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product6.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB!</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$70.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product6.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen </h3>
+                </a>
+                <p class="product__info">$80.00</p>
+                <div class="product__rating">Рейтинг</div>
+              </div>
+              <div class="product__bottom">
+                <button class="btn-reset product__btn product__btn-comparison"></button>
+                <button class="btn-reset product__btn-add">add to cart</button>
+                <button class="btn-reset product__btn product__btn-favorite"></button>
+              </div>
+            </div>
+
+            <div class="bestseller__column--lg tabs__content" id="tabs-7">
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product7.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$99.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product7.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB!</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$109.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product7.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB!</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$39.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product7.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB!</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$150.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product7.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB!</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$70.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <div class="bestseller__product tab-panel product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product7.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen </h3>
+                </a>
+                <p class="product__info">$80.00</p>
+                <div class="product__rating">Рейтинг</div>
+              </div>
+              <div class="product__bottom">
+                <button class="btn-reset product__btn product__btn-comparison"></button>
+                <button class="btn-reset product__btn-add">add to cart</button>
+                <button class="btn-reset product__btn product__btn-favorite"></button>
+              </div>
+            </div>
+
+          </div>
+          <div class="bestseller__banners banners">
+            <div class="banners__item">
+              <img class="banners__img" src="img/bestseller/banner1.jpg" alt="#">
+              <div class="banners__content">
+                <h4 class="banners__subtitle">Non-Stick</h4>
+                <h3 class="banners__title">Titanium Pans</h3>
+                <a href="#" class="banners__link">Get It Now</a>
+              </div>
+            </div>
+            <div class="banners__item">
+              <img class="banners__img" src="img/bestseller/banner2.jpg" alt="#">
+              <div class="banners__content banners__content--left">
+                <h3 class="banners__title">25% Off</h3>
+                <h4 class="banners__subtitle">Bagels & thicker slices</h4>
+                <a href="#" class="banners__link">Get It Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="partners">
+        <div class="container">
+          <h2 class="section-title partners__title">Our Partners</h2>
+          <div class="partners__container">
+            <a href="#" class="partners__item">
+              <svg width="93" height="50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0.233 93 49.533" fill="#a6a6a6"><svg xmlns="http://www.w3.org/2000/svg" width="93" height="50" viewBox="1 1.998 91.997 48.999">
+                  <path fill-rule="evenodd" d="M8.675 19.893l8.09 8.094 5.262-5.265 2.388 2.39 2.39-2.39 5.262 5.265 8.09-8.094-8.09-8.094-5.263 5.264-2.389-2.39-2.388 2.39-5.262-5.264-8.09 8.094zM1 27.57l12.035 12.04 7.827-7.83 3.553 3.554 3.554-3.554 7.828 7.83 12.035-12.04-12.035-12.04-7.828 7.83-3.554-3.554-3.553 3.554-7.827-7.83L1 27.571zm7.675-7.678l8.09 8.094 5.262-5.265 2.388 2.39 2.39-2.39 5.262 5.265 8.09-8.094-8.09-8.094-5.263 5.264-2.389-2.39-2.388 2.39-5.262-5.264-8.09 8.094zM1 27.57l12.035 12.04 7.827-7.83 3.553 3.554 3.554-3.554 7.828 7.83 12.035-12.04-12.035-12.04-7.828 7.83-3.554-3.554-3.553 3.554-7.827-7.83L1 27.571zm23.415 7.198l8.111 8.114-8.11 8.114-8.11-8.114 8.11-8.114zm0-26.916l3.183 3.184 2.927-2.927-6.11-6.112-6.109 6.112 2.927 2.927 3.182-3.184zm31.558 18.568c-.157.587-.502.917-1.162.917-.66 0-.829-.33-.672-.917l3.579-13.362h6.16c1.45 0 2.624 1.028 2.186 2.662l-.339 1.265c-.462 1.726-2.129 2.606-3.596 2.606h-1.686l2.543 5.91c.128.276.292.624.198.974-.138.514-.654.862-1.167.862-.367 0-.546-.22-.669-.514l-3.124-7.232h-.422l-1.829 6.829zm2.32-8.664h4.071c.514 0 1.33-.036 1.527-.77l.34-1.266c.196-.734-.531-.827-1.082-.827H59.06l-.767 2.863zm15.975-3.761c.279-.496.598-.937 1.185-.937.605 0 .702.459.704.937l.21 12.425c.01.44-.612.917-1.125.917-.57 0-.735-.478-.744-.917l-.09-2.203h-3.905l-1.287 2.203c-.247.44-.667.917-1.237.917-.513 0-.88-.478-.634-.917l6.923-12.425zm.039 3.413h-.036l-2.764 4.974h2.88l-.08-4.974zm11.691 9.012c-.158.587-.503.917-1.164.917-.66 0-.828-.33-.67-.917l1.572-5.874-2.354-4.698.501-1.872c.158-.587.503-.918 1.164-.918.66 0 .828.33.67.918l-.333 1.247 1.756 3.506 3.635-3.506.334-1.247c.157-.587.503-.918 1.163-.918s.828.33.67.918l-.5 1.872-4.872 4.698-1.572 5.874zm-30.343 4.028l-2.495 9.318h-.534l2.496-9.318h-3.585l.138-.52h7.705l-.14.52h-3.585zm5.492-.52h6.34l-.138.52h-5.793l-1.03 3.85h4.624l-.14.521h-4.624L59.2 39.247h5.806l-.14.52h-6.354l2.635-9.837zm14.994 7.154c-1.27 1.798-3.267 2.852-5.333 2.852-2.825 0-4.484-1.995-3.648-5.115.839-3.134 3.54-5.088 6.394-5.088 2.278 0 3.483 1.223 3.719 2.6l-.548.155c-.144-.619-.737-2.235-3.295-2.235-2.615 0-4.972 1.715-5.737 4.568-.767 2.866.752 4.595 3.24 4.595 1.757 0 3.573-.899 4.725-2.473l.483.14zm9.332-2.263h-6.227l-1.326 4.947h-.548l2.634-9.837h.549l-1.17 4.37h6.227l1.17-4.37h.549l-2.635 9.837h-.548l1.325-4.947z" />
+                </svg></svg>
+            </a>
+            <a href="#" class="partners__item">
+              <svg width="90" height="44" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0.255 90 43.49" fill="#a6a6a6"><svg xmlns="http://www.w3.org/2000/svg" width="90" height="44" viewBox="1.999 1.987 89.001 43.007">
+                  <path fill-rule="evenodd" d="M54.131 11.824a4.085 4.085 0 0 1 3.982-3.43c1.638 0 3.175 1.143 2.77 3.43l-.125.709h-2.013l.125-.71c.17-.965-.382-1.418-1.112-1.418-.73 0-1.443.453-1.613 1.419l-1.309 7.41c-.17.966.382 1.419 1.112 1.419.73 0 1.442-.453 1.613-1.419l.466-2.642h-1.6l.314-1.771h3.614l-.78 4.413a4.088 4.088 0 0 1-3.982 3.43c-1.639 0-3.174-1.145-2.77-3.43l1.308-7.41zm8.88-3.31h2.014l-1.98 11.212c-.133.75.045.967.803 1.045l-.334 1.893c-1.856 0-2.919-.475-2.508-2.799L63.01 8.514zm2.31 7.39c.142-.808.366-1.518.734-2.03.626-.867 1.655-1.44 2.88-1.44 1.223 0 2.05.573 2.37 1.44.188.512.16 1.222.018 2.03l-.582 3.29c-.143.808-.367 1.517-.733 2.03-.627.867-1.656 1.44-2.88 1.44s-2.051-.573-2.371-1.44c-.187-.513-.16-1.222-.017-2.03l.58-3.29zm1.376 3.606c-.131.749.173 1.143.786 1.143.612 0 1.056-.394 1.188-1.143l.693-3.921c.132-.75-.172-1.143-.784-1.143-.612 0-1.058.393-1.19 1.143l-.693 3.921zm7.414-10.996h2.014l-.873 4.946h.04c.55-.651 1.248-1.025 2.037-1.025.967 0 1.396.374 1.636.907.183.413.143.984-.112 2.423l-.672 3.804c-.194 1.104-.4 1.714-.715 2.148-.47.65-1.116.947-1.925.947-1.007 0-1.322-.455-1.734-1.026l-.16.907h-2.013L74.11 8.514zm2.753 7.113c.112-.63-.01-1.181-.78-1.181-.571 0-1.087.452-1.198 1.083l-.685 3.882c-.13.73.176 1.242.787 1.242.692 0 1.085-.552 1.229-1.36l.647-3.666zm6.446 5.892h-.041c-.661.73-1.17 1.145-2.136 1.145-.93 0-2.093-.455-1.702-2.662.403-2.286 1.251-3.39 3.778-3.39.278 0 .546.04.958.06l.184-1.045c.118-.67-.05-1.181-.799-1.181-.514 0-1.09.354-1.323 1.004h-1.953c.215-.887.663-1.636 1.29-2.168a3.577 3.577 0 0 1 2.34-.847c1.68 0 2.835 1.064 2.466 3.154l-1.23 6.956H83.13l.18-1.026zm.578-3.27c-.21-.04-.366-.06-.543-.06-.868 0-1.643.355-1.83 1.42-.136.767.168 1.28.82 1.28.671 0 1.17-.472 1.313-1.28l.24-1.36zm5.098-9.735H91l-1.982 11.212c-.131.75.048.967.803 1.045l-.334 1.893c-1.855 0-2.917-.475-2.505-2.799l2.004-11.351zM54.423 26.052h-2.605l.373-2.116h7.465l-.374 2.116h-2.606l-2.398 13.58h-2.254l2.399-13.58zm7.547-2.116h6.714l-.373 2.116h-4.46l-.814 4.607h3.886l-.374 2.116h-3.886l-.814 4.608h4.46l-.397 2.249h-6.715l2.773-15.696zm14.497 12.191c-.343 1.94-2.212 3.636-4.22 3.636-1.724 0-3.563-.837-3.057-3.703l1.527-8.641a4.352 4.352 0 0 1 4.304-3.615c2.076 0 3.346 1.565 2.961 3.748l-.156.881h-2.255l.133-.75c.156-.882-.242-1.63-1.102-1.63-1.125 0-1.529.77-1.716 1.829l-1.416 8.025c-.16.903.068 1.608 1.084 1.608.62 0 1.477-.353 1.694-1.586l.136-.772h2.255l-.172.97zm5.308-12.191h2.252l-1.189 6.723h2.784l1.187-6.723h2.255L86.29 39.632h-2.253l1.235-6.988h-2.784l-1.234 6.988H79l2.774-15.696zm-56.278-.111a3.39 3.39 0 0 1-3.393 3.387 3.39 3.39 0 0 1-3.394-3.387c0-1.87 1.52-3.387 3.394-3.387a3.39 3.39 0 0 1 3.393 3.387zm-7.776 2.992a2.74 2.74 0 0 1-2.743 2.738 2.74 2.74 0 0 1-2.743-2.738 2.74 2.74 0 0 1 2.743-2.738 2.74 2.74 0 0 1 2.743 2.738zm-6.419 2.314c0 1.153-.936 2.09-2.093 2.09a2.092 2.092 0 0 1-2.092-2.09c0-1.153.937-2.089 2.092-2.089 1.157 0 2.093.936 2.093 2.09zm-6.419 2.314a1.44 1.44 0 0 1-1.442 1.44 1.44 1.44 0 1 1 1.442-1.44zm26.553-1.693c0 1.871-1.52 3.388-3.394 3.388a3.39 3.39 0 0 1-3.393-3.388 3.39 3.39 0 0 1 3.393-3.387 3.391 3.391 0 0 1 3.394 3.387zm-7.776 2.993a2.74 2.74 0 0 1-2.743 2.737 2.74 2.74 0 0 1-2.744-2.737 2.742 2.742 0 0 1 2.744-2.738 2.742 2.742 0 0 1 2.743 2.738zm-6.42 2.315a2.09 2.09 0 0 1-2.092 2.087 2.09 2.09 0 1 1 0-4.177c1.155 0 2.093.935 2.093 2.09zm20.135.62a3.391 3.391 0 0 1-3.394 3.387 3.391 3.391 0 0 1-3.394-3.386 3.39 3.39 0 0 1 3.394-3.388 3.39 3.39 0 0 1 3.394 3.388zm-7.776 2.992a2.741 2.741 0 0 1-2.744 2.738 2.74 2.74 0 0 1-2.743-2.738 2.74 2.74 0 0 1 2.743-2.737 2.74 2.74 0 0 1 2.744 2.737zm13.714 2.935c0 1.871-1.52 3.387-3.393 3.387a3.39 3.39 0 0 1-3.394-3.387 3.39 3.39 0 0 1 3.394-3.386 3.391 3.391 0 0 1 3.393 3.386zm4.32-24.349a3.397 3.397 0 0 1-4.7-.957 3.382 3.382 0 0 1 .959-4.694 3.397 3.397 0 0 1 4.702.958 3.384 3.384 0 0 1-.96 4.693zm1.95-9.058a3.396 3.396 0 0 1-4.702-.957 3.384 3.384 0 0 1 .96-4.695 3.4 3.4 0 0 1 4.702.958 3.384 3.384 0 0 1-.96 4.694zm-8.236 4.614a2.745 2.745 0 0 1-3.71-1.13 2.736 2.736 0 0 1 1.13-3.703 2.746 2.746 0 0 1 3.711 1.129 2.736 2.736 0 0 1-1.13 3.704zm4.34 13.503a3.399 3.399 0 0 1-4.703-.959 3.385 3.385 0 0 1 .96-4.693 3.396 3.396 0 0 1 4.702.958 3.385 3.385 0 0 1-.96 4.694zM38.9 20.833c-1.337.71-3 .206-3.711-1.13A2.737 2.737 0 0 1 36.319 16c1.337-.71 3-.205 3.71 1.13a2.736 2.736 0 0 1-1.13 3.704zm-5.066-4.567a2.093 2.093 0 0 1-2.83-.861 2.086 2.086 0 0 1 .861-2.825 2.093 2.093 0 0 1 2.831.86 2.085 2.085 0 0 1-.862 2.826zm9.905 19.109a3.399 3.399 0 0 1-4.702-.958 3.383 3.383 0 0 1 .959-4.693 3.398 3.398 0 0 1 4.702.957 3.385 3.385 0 0 1-.96 4.694zm-7.287-6.524c-1.337.711-3 .205-3.71-1.129a2.735 2.735 0 0 1 1.13-3.704 2.746 2.746 0 0 1 3.71 1.13 2.737 2.737 0 0 1-1.13 3.703zm-5.066-4.566a2.096 2.096 0 0 1-2.831-.861 2.087 2.087 0 0 1 .863-2.826 2.095 2.095 0 0 1 2.831.861 2.088 2.088 0 0 1-.863 2.826zm-5.065-4.566a1.444 1.444 0 0 1-1.951-.594 1.438 1.438 0 0 1 .594-1.947 1.444 1.444 0 0 1 1.951.594 1.438 1.438 0 0 1-.594 1.947z" />
+                </svg></svg>
+            </a>
+            <a href="#" class="partners__item">
+              <svg width="95" height="49" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0.244 95 48.513" fill="#a6a6a6"><svg xmlns="http://www.w3.org/2000/svg" width="95" height="49" viewBox="1 1.996 93.999 48.001">
+                  <path fill-rule="evenodd" d="M25.813 23.76l-3.943 2.308-1.427-2.66 2.959-1.733V8.555L12.2 1.997l-11.2 6.56v13.119l11.2 6.56 3.845-2.252 1.427 2.66-2.861 1.676v13.118l11.2 6.56 11.202-6.56V30.32l-11.201-6.56zm-13.612.716l-7.993-4.68v-9.363l7.993-4.68 7.993 4.68v9.362l-7.993 4.68zm21.604 17.082l-7.992 4.68-7.993-4.68v-9.362l7.993-4.68 7.992 4.68v9.362zM5.407 11.135L12.2 7.157l6.794 3.978v7.959l-6.794 3.977-6.794-3.977v-7.959zm13.612 21.763l6.794-3.978 6.794 3.978v7.958l-6.794 3.979-6.794-3.979v-7.958zm30.728-12.863h-6.092v5.86h-2.75V11.846h2.75v5.5h6.092v-5.5h2.75v14.049h-2.75v-5.86zm5.24-8.189h9.832v2.59h-7.083v2.95h5.321v2.609h-5.321v3.31h7.162v2.59h-9.912V11.846zm19.461 11.238c-.91-1.345-1.444-2.148-1.463-2.148h-.021c-.019 0-.573.803-1.543 2.168l-1.92 2.79h-3.323l5.224-7.265-4.927-6.783h3.343l1.88 2.69c.852 1.183 1.425 2.026 1.445 2.026h.02c.039 0 .593-.862 1.365-2.046l1.78-2.67h3.304l-4.867 6.803 5.104 7.246h-3.442l-1.959-2.81zm10.322 0l-1.048 2.81h-2.909l5.54-14.048h3.106L95 25.895h-2.948l-1.048-2.81H84.77zm4.115-5.618c-.475-1.204-.95-2.45-.968-2.47h-.06c-.02.02-.495 1.246-.97 2.47l-1.167 3.09h4.313l-1.148-3.09zM47.472 32.17v11.46h-2.75V32.17H40.31v-2.588h11.574v2.588h-4.412zm6.307-2.588h9.832v2.588H56.53v2.951h5.32v2.61h-5.32v3.31h7.162v2.589h-9.912V29.582zm24.668 9.954c-1.069 2.708-3.582 4.354-6.569 4.354-4.096 0-7.162-2.93-7.162-7.324 0-4.315 3.066-7.266 7.162-7.266 3.205 0 5.5 1.766 6.41 3.975l-2.73.762c-.633-1.084-1.84-2.108-3.799-2.108-2.552 0-4.273 1.847-4.273 4.657 0 2.87 1.82 4.676 4.253 4.676 1.96 0 3.344-1.044 3.996-2.45l2.712.724zm10.697-1.765h-6.093v5.859h-2.75V29.582h2.75v5.499h6.093v-5.5h2.75V43.63h-2.75v-5.86z" />
+                </svg></svg>
+            </a>
+            <a href="#" class="partners__item">
+              <svg width="103" height="50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0.262 103 49.477" fill="#247cc6"><svg xmlns="http://www.w3.org/2000/svg" width="103" height="50" viewBox="1.998 1 102.002 48.997">
+                  <path fill-rule="evenodd" d="M70.85 1H52.307S36.131 3.377 35.774 15.872h-.031v3.818h20.15L35.147 34.564H53.69s16.182-2.376 16.534-14.874h.034v-3.818H50.112L70.85 1zM6.427 48.003c.192.265.338.498.338.845 0 .763-.551 1.15-1.218 1.15H3.427c-.367 0-.686-.072-.976-.325-.261-.225-.453-.591-.453-.948 0-.325.172-.61.51-.61.28 0 .453.244.453.52 0 .303.156.345.427.345h2.093c.077 0 .319.03.319-.122 0-.082-.134-.235-.173-.296l-3.31-4.487c-.204-.275-.32-.478-.32-.833 0-.408.183-.754.512-.978.27-.182.49-.182.8-.182h2.047c.367 0 .677.08.955.334.251.235.455.612.455.968 0 .324-.156.59-.503.59-.288 0-.463-.193-.463-.48 0-.345-.163-.395-.463-.395H3.29c-.105 0-.329-.03-.329.143 0 .09.106.214.147.273l3.32 4.488zm4.078 1.995c-.482 0-.858-.122-1.196-.52-.32-.376-.367-.742-.367-1.21V42.59c0-.326.134-.508.482-.508.347 0 .482.182.482.508v5.678c0 .57.165.712.599.712h1.642c.434 0 .597-.143.597-.712V42.59c0-.326.137-.508.484-.508.345 0 .482.182.482.508v5.678c0 .468-.048.834-.367 1.21-.338.398-.714.52-1.196.52h-1.642zm5.382-7.916h2.702c1.419 0 2.066.914 2.066 2.35 0 .59-.127 1.13-.637 1.607.549.55.637 1.09.637 1.842 0 1.333-.841 2.117-2.066 2.117h-2.702v-7.916zm.964 3.45h1.738c.695 0 1.1-.327 1.1-1.1 0-.855-.223-1.333-1.1-1.333h-1.738v2.432zm0 3.448h1.738c.695 0 1.1-.326 1.1-1.1 0-.853-.223-1.332-1.1-1.332h-1.738v2.432zm10.411-.977c.195.265.338.498.338.845 0 .763-.551 1.15-1.215 1.15h-2.124c-.367 0-.686-.072-.976-.325-.259-.225-.453-.591-.453-.948 0-.325.173-.61.51-.61.281 0 .454.244.454.52 0 .303.156.345.427.345h2.092c.08 0 .32.03.32-.122 0-.082-.135-.235-.173-.296l-3.311-4.487c-.204-.275-.319-.478-.319-.833 0-.408.182-.754.51-.978.272-.182.494-.182.804-.182h2.045c.366 0 .676.08.956.334.25.235.453.612.453.968 0 .324-.155.59-.5.59-.29 0-.466-.193-.466-.48 0-.345-.163-.395-.462-.395h-2.048c-.105 0-.328-.03-.328.143 0 .09.108.214.146.273l3.32 4.488zm3.479-4.904v.367c0 .325-.134.507-.482.507s-.482-.182-.482-.507v-1.384h4.768v1.384c0 .325-.136.507-.484.507-.345 0-.482-.182-.482-.507v-.367h-.935v6.39c0 .325-.136.509-.484.509s-.482-.184-.482-.509V43.1h-.937zm8.848 5.881h1.42c.249 0 .481.143.481.51 0 .364-.232.508-.481.508h-3.805c-.25 0-.482-.144-.482-.509 0-.366.233-.509.482-.509h1.42v-5.881h-1.42c-.25 0-.482-.143-.482-.509s.233-.508.482-.508h3.805c.249 0 .481.142.481.508s-.232.509-.481.509h-1.42v5.881zm5.044-5.881v.367c0 .325-.136.507-.481.507-.35 0-.485-.182-.485-.507v-1.384h4.769v1.384c0 .325-.135.507-.482.507-.348 0-.485-.182-.485-.507v-.367h-.935v6.39c0 .325-.134.509-.481.509-.348 0-.485-.184-.485-.509V43.1h-.935zm7.542 6.899c-.482 0-.858-.122-1.196-.52-.319-.376-.367-.742-.367-1.21V42.59c0-.326.135-.508.482-.508.348 0 .485.182.485.508v5.678c0 .57.162.712.596.712h1.643c.434 0 .596-.143.596-.712V42.59c0-.326.137-.508.485-.508.345 0 .482.182.482.508v5.678c0 .468-.048.834-.367 1.21-.338.398-.715.52-1.196.52h-1.643zm6.349-6.899v.367c0 .325-.137.507-.482.507-.348 0-.485-.182-.485-.507v-1.384h4.769v1.384c0 .325-.135.507-.482.507-.348 0-.485-.182-.485-.507v-.367h-.934v6.39c0 .325-.135.509-.482.509-.348 0-.482-.184-.482-.509V43.1h-.937zM68.79 48.98c.25 0 .482.143.482.51 0 .364-.233.508-.482.508h-4.287v-7.916h4.287c.25 0 .482.142.482.508s-.233.509-.482.509h-3.32v2.432h1.416c.252 0 .485.141.485.508 0 .366-.233.509-.485.509H65.47v2.432h3.32zm13.118-3.55c.396 0 .578.162.578.619 0 .459-.182.621-.578.621H79.65c-.396 0-.58-.162-.58-.621 0-.457.184-.62.58-.62h2.258zm13.243 3.55h1.42c.25 0 .483.143.483.51 0 .364-.232.508-.484.508h-3.802c-.252 0-.482-.144-.482-.509 0-.366.23-.509.482-.509h1.42v-5.881h-1.42c-.252 0-.482-.143-.482-.509s.23-.508.482-.508h3.802c.252 0 .484.142.484.508s-.232.509-.484.509h-1.42v5.881zm5.044-5.881v.367c0 .325-.134.507-.482.507s-.482-.182-.482-.507v-1.384H104v1.384c0 .325-.137.507-.485.507-.345 0-.482-.182-.482-.507v-.367h-.937v6.39c0 .325-.134.509-.482.509-.347 0-.482-.184-.482-.509V43.1h-.937z" />
+                </svg></svg>
+            </a>
+            <a href="#" class="partners__item">
+              <svg width="93" height="50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0.233 93 49.533" fill="#a6a6a6"><svg xmlns="http://www.w3.org/2000/svg" width="93" height="50" viewBox="1 1.998 91.997 48.999">
+                  <path fill-rule="evenodd" d="M8.675 19.893l8.09 8.094 5.262-5.265 2.388 2.39 2.39-2.39 5.262 5.265 8.09-8.094-8.09-8.094-5.263 5.264-2.389-2.39-2.388 2.39-5.262-5.264-8.09 8.094zM1 27.57l12.035 12.04 7.827-7.83 3.553 3.554 3.554-3.554 7.828 7.83 12.035-12.04-12.035-12.04-7.828 7.83-3.554-3.554-3.553 3.554-7.827-7.83L1 27.571zm7.675-7.678l8.09 8.094 5.262-5.265 2.388 2.39 2.39-2.39 5.262 5.265 8.09-8.094-8.09-8.094-5.263 5.264-2.389-2.39-2.388 2.39-5.262-5.264-8.09 8.094zM1 27.57l12.035 12.04 7.827-7.83 3.553 3.554 3.554-3.554 7.828 7.83 12.035-12.04-12.035-12.04-7.828 7.83-3.554-3.554-3.553 3.554-7.827-7.83L1 27.571zm23.415 7.198l8.111 8.114-8.11 8.114-8.11-8.114 8.11-8.114zm0-26.916l3.183 3.184 2.927-2.927-6.11-6.112-6.109 6.112 2.927 2.927 3.182-3.184zm31.558 18.568c-.157.587-.502.917-1.162.917-.66 0-.829-.33-.672-.917l3.579-13.362h6.16c1.45 0 2.624 1.028 2.186 2.662l-.339 1.265c-.462 1.726-2.129 2.606-3.596 2.606h-1.686l2.543 5.91c.128.276.292.624.198.974-.138.514-.654.862-1.167.862-.367 0-.546-.22-.669-.514l-3.124-7.232h-.422l-1.829 6.829zm2.32-8.664h4.071c.514 0 1.33-.036 1.527-.77l.34-1.266c.196-.734-.531-.827-1.082-.827H59.06l-.767 2.863zm15.975-3.761c.279-.496.598-.937 1.185-.937.605 0 .702.459.704.937l.21 12.425c.01.44-.612.917-1.125.917-.57 0-.735-.478-.744-.917l-.09-2.203h-3.905l-1.287 2.203c-.247.44-.667.917-1.237.917-.513 0-.88-.478-.634-.917l6.923-12.425zm.039 3.413h-.036l-2.764 4.974h2.88l-.08-4.974zm11.691 9.012c-.158.587-.503.917-1.164.917-.66 0-.828-.33-.67-.917l1.572-5.874-2.354-4.698.501-1.872c.158-.587.503-.918 1.164-.918.66 0 .828.33.67.918l-.333 1.247 1.756 3.506 3.635-3.506.334-1.247c.157-.587.503-.918 1.163-.918s.828.33.67.918l-.5 1.872-4.872 4.698-1.572 5.874zm-30.343 4.028l-2.495 9.318h-.534l2.496-9.318h-3.585l.138-.52h7.705l-.14.52h-3.585zm5.492-.52h6.34l-.138.52h-5.793l-1.03 3.85h4.624l-.14.521h-4.624L59.2 39.247h5.806l-.14.52h-6.354l2.635-9.837zm14.994 7.154c-1.27 1.798-3.267 2.852-5.333 2.852-2.825 0-4.484-1.995-3.648-5.115.839-3.134 3.54-5.088 6.394-5.088 2.278 0 3.483 1.223 3.719 2.6l-.548.155c-.144-.619-.737-2.235-3.295-2.235-2.615 0-4.972 1.715-5.737 4.568-.767 2.866.752 4.595 3.24 4.595 1.757 0 3.573-.899 4.725-2.473l.483.14zm9.332-2.263h-6.227l-1.326 4.947h-.548l2.634-9.837h.549l-1.17 4.37h6.227l1.17-4.37h.549l-2.635 9.837h-.548l1.325-4.947z" />
+                </svg></svg>
+            </a>
+            <a href="#" class="partners__item">
+              <svg width="90" height="44" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0.255 90 43.49" fill="#a6a6a6"><svg xmlns="http://www.w3.org/2000/svg" width="90" height="44" viewBox="1.999 1.987 89.001 43.007">
+                  <path fill-rule="evenodd" d="M54.131 11.824a4.085 4.085 0 0 1 3.982-3.43c1.638 0 3.175 1.143 2.77 3.43l-.125.709h-2.013l.125-.71c.17-.965-.382-1.418-1.112-1.418-.73 0-1.443.453-1.613 1.419l-1.309 7.41c-.17.966.382 1.419 1.112 1.419.73 0 1.442-.453 1.613-1.419l.466-2.642h-1.6l.314-1.771h3.614l-.78 4.413a4.088 4.088 0 0 1-3.982 3.43c-1.639 0-3.174-1.145-2.77-3.43l1.308-7.41zm8.88-3.31h2.014l-1.98 11.212c-.133.75.045.967.803 1.045l-.334 1.893c-1.856 0-2.919-.475-2.508-2.799L63.01 8.514zm2.31 7.39c.142-.808.366-1.518.734-2.03.626-.867 1.655-1.44 2.88-1.44 1.223 0 2.05.573 2.37 1.44.188.512.16 1.222.018 2.03l-.582 3.29c-.143.808-.367 1.517-.733 2.03-.627.867-1.656 1.44-2.88 1.44s-2.051-.573-2.371-1.44c-.187-.513-.16-1.222-.017-2.03l.58-3.29zm1.376 3.606c-.131.749.173 1.143.786 1.143.612 0 1.056-.394 1.188-1.143l.693-3.921c.132-.75-.172-1.143-.784-1.143-.612 0-1.058.393-1.19 1.143l-.693 3.921zm7.414-10.996h2.014l-.873 4.946h.04c.55-.651 1.248-1.025 2.037-1.025.967 0 1.396.374 1.636.907.183.413.143.984-.112 2.423l-.672 3.804c-.194 1.104-.4 1.714-.715 2.148-.47.65-1.116.947-1.925.947-1.007 0-1.322-.455-1.734-1.026l-.16.907h-2.013L74.11 8.514zm2.753 7.113c.112-.63-.01-1.181-.78-1.181-.571 0-1.087.452-1.198 1.083l-.685 3.882c-.13.73.176 1.242.787 1.242.692 0 1.085-.552 1.229-1.36l.647-3.666zm6.446 5.892h-.041c-.661.73-1.17 1.145-2.136 1.145-.93 0-2.093-.455-1.702-2.662.403-2.286 1.251-3.39 3.778-3.39.278 0 .546.04.958.06l.184-1.045c.118-.67-.05-1.181-.799-1.181-.514 0-1.09.354-1.323 1.004h-1.953c.215-.887.663-1.636 1.29-2.168a3.577 3.577 0 0 1 2.34-.847c1.68 0 2.835 1.064 2.466 3.154l-1.23 6.956H83.13l.18-1.026zm.578-3.27c-.21-.04-.366-.06-.543-.06-.868 0-1.643.355-1.83 1.42-.136.767.168 1.28.82 1.28.671 0 1.17-.472 1.313-1.28l.24-1.36zm5.098-9.735H91l-1.982 11.212c-.131.75.048.967.803 1.045l-.334 1.893c-1.855 0-2.917-.475-2.505-2.799l2.004-11.351zM54.423 26.052h-2.605l.373-2.116h7.465l-.374 2.116h-2.606l-2.398 13.58h-2.254l2.399-13.58zm7.547-2.116h6.714l-.373 2.116h-4.46l-.814 4.607h3.886l-.374 2.116h-3.886l-.814 4.608h4.46l-.397 2.249h-6.715l2.773-15.696zm14.497 12.191c-.343 1.94-2.212 3.636-4.22 3.636-1.724 0-3.563-.837-3.057-3.703l1.527-8.641a4.352 4.352 0 0 1 4.304-3.615c2.076 0 3.346 1.565 2.961 3.748l-.156.881h-2.255l.133-.75c.156-.882-.242-1.63-1.102-1.63-1.125 0-1.529.77-1.716 1.829l-1.416 8.025c-.16.903.068 1.608 1.084 1.608.62 0 1.477-.353 1.694-1.586l.136-.772h2.255l-.172.97zm5.308-12.191h2.252l-1.189 6.723h2.784l1.187-6.723h2.255L86.29 39.632h-2.253l1.235-6.988h-2.784l-1.234 6.988H79l2.774-15.696zm-56.278-.111a3.39 3.39 0 0 1-3.393 3.387 3.39 3.39 0 0 1-3.394-3.387c0-1.87 1.52-3.387 3.394-3.387a3.39 3.39 0 0 1 3.393 3.387zm-7.776 2.992a2.74 2.74 0 0 1-2.743 2.738 2.74 2.74 0 0 1-2.743-2.738 2.74 2.74 0 0 1 2.743-2.738 2.74 2.74 0 0 1 2.743 2.738zm-6.419 2.314c0 1.153-.936 2.09-2.093 2.09a2.092 2.092 0 0 1-2.092-2.09c0-1.153.937-2.089 2.092-2.089 1.157 0 2.093.936 2.093 2.09zm-6.419 2.314a1.44 1.44 0 0 1-1.442 1.44 1.44 1.44 0 1 1 1.442-1.44zm26.553-1.693c0 1.871-1.52 3.388-3.394 3.388a3.39 3.39 0 0 1-3.393-3.388 3.39 3.39 0 0 1 3.393-3.387 3.391 3.391 0 0 1 3.394 3.387zm-7.776 2.993a2.74 2.74 0 0 1-2.743 2.737 2.74 2.74 0 0 1-2.744-2.737 2.742 2.742 0 0 1 2.744-2.738 2.742 2.742 0 0 1 2.743 2.738zm-6.42 2.315a2.09 2.09 0 0 1-2.092 2.087 2.09 2.09 0 1 1 0-4.177c1.155 0 2.093.935 2.093 2.09zm20.135.62a3.391 3.391 0 0 1-3.394 3.387 3.391 3.391 0 0 1-3.394-3.386 3.39 3.39 0 0 1 3.394-3.388 3.39 3.39 0 0 1 3.394 3.388zm-7.776 2.992a2.741 2.741 0 0 1-2.744 2.738 2.74 2.74 0 0 1-2.743-2.738 2.74 2.74 0 0 1 2.743-2.737 2.74 2.74 0 0 1 2.744 2.737zm13.714 2.935c0 1.871-1.52 3.387-3.393 3.387a3.39 3.39 0 0 1-3.394-3.387 3.39 3.39 0 0 1 3.394-3.386 3.391 3.391 0 0 1 3.393 3.386zm4.32-24.349a3.397 3.397 0 0 1-4.7-.957 3.382 3.382 0 0 1 .959-4.694 3.397 3.397 0 0 1 4.702.958 3.384 3.384 0 0 1-.96 4.693zm1.95-9.058a3.396 3.396 0 0 1-4.702-.957 3.384 3.384 0 0 1 .96-4.695 3.4 3.4 0 0 1 4.702.958 3.384 3.384 0 0 1-.96 4.694zm-8.236 4.614a2.745 2.745 0 0 1-3.71-1.13 2.736 2.736 0 0 1 1.13-3.703 2.746 2.746 0 0 1 3.711 1.129 2.736 2.736 0 0 1-1.13 3.704zm4.34 13.503a3.399 3.399 0 0 1-4.703-.959 3.385 3.385 0 0 1 .96-4.693 3.396 3.396 0 0 1 4.702.958 3.385 3.385 0 0 1-.96 4.694zM38.9 20.833c-1.337.71-3 .206-3.711-1.13A2.737 2.737 0 0 1 36.319 16c1.337-.71 3-.205 3.71 1.13a2.736 2.736 0 0 1-1.13 3.704zm-5.066-4.567a2.093 2.093 0 0 1-2.83-.861 2.086 2.086 0 0 1 .861-2.825 2.093 2.093 0 0 1 2.831.86 2.085 2.085 0 0 1-.862 2.826zm9.905 19.109a3.399 3.399 0 0 1-4.702-.958 3.383 3.383 0 0 1 .959-4.693 3.398 3.398 0 0 1 4.702.957 3.385 3.385 0 0 1-.96 4.694zm-7.287-6.524c-1.337.711-3 .205-3.71-1.129a2.735 2.735 0 0 1 1.13-3.704 2.746 2.746 0 0 1 3.71 1.13 2.737 2.737 0 0 1-1.13 3.703zm-5.066-4.566a2.096 2.096 0 0 1-2.831-.861 2.087 2.087 0 0 1 .863-2.826 2.095 2.095 0 0 1 2.831.861 2.088 2.088 0 0 1-.863 2.826zm-5.065-4.566a1.444 1.444 0 0 1-1.951-.594 1.438 1.438 0 0 1 .594-1.947 1.444 1.444 0 0 1 1.951.594 1.438 1.438 0 0 1-.594 1.947z" />
+                </svg></svg>
+            </a>
+            <a href="#" class="partners__item">
+              <svg width="95" height="49" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0.244 95 48.513" fill="#a6a6a6"><svg xmlns="http://www.w3.org/2000/svg" width="95" height="49" viewBox="1 1.996 93.999 48.001">
+                  <path fill-rule="evenodd" d="M25.813 23.76l-3.943 2.308-1.427-2.66 2.959-1.733V8.555L12.2 1.997l-11.2 6.56v13.119l11.2 6.56 3.845-2.252 1.427 2.66-2.861 1.676v13.118l11.2 6.56 11.202-6.56V30.32l-11.201-6.56zm-13.612.716l-7.993-4.68v-9.363l7.993-4.68 7.993 4.68v9.362l-7.993 4.68zm21.604 17.082l-7.992 4.68-7.993-4.68v-9.362l7.993-4.68 7.992 4.68v9.362zM5.407 11.135L12.2 7.157l6.794 3.978v7.959l-6.794 3.977-6.794-3.977v-7.959zm13.612 21.763l6.794-3.978 6.794 3.978v7.958l-6.794 3.979-6.794-3.979v-7.958zm30.728-12.863h-6.092v5.86h-2.75V11.846h2.75v5.5h6.092v-5.5h2.75v14.049h-2.75v-5.86zm5.24-8.189h9.832v2.59h-7.083v2.95h5.321v2.609h-5.321v3.31h7.162v2.59h-9.912V11.846zm19.461 11.238c-.91-1.345-1.444-2.148-1.463-2.148h-.021c-.019 0-.573.803-1.543 2.168l-1.92 2.79h-3.323l5.224-7.265-4.927-6.783h3.343l1.88 2.69c.852 1.183 1.425 2.026 1.445 2.026h.02c.039 0 .593-.862 1.365-2.046l1.78-2.67h3.304l-4.867 6.803 5.104 7.246h-3.442l-1.959-2.81zm10.322 0l-1.048 2.81h-2.909l5.54-14.048h3.106L95 25.895h-2.948l-1.048-2.81H84.77zm4.115-5.618c-.475-1.204-.95-2.45-.968-2.47h-.06c-.02.02-.495 1.246-.97 2.47l-1.167 3.09h4.313l-1.148-3.09zM47.472 32.17v11.46h-2.75V32.17H40.31v-2.588h11.574v2.588h-4.412zm6.307-2.588h9.832v2.588H56.53v2.951h5.32v2.61h-5.32v3.31h7.162v2.589h-9.912V29.582zm24.668 9.954c-1.069 2.708-3.582 4.354-6.569 4.354-4.096 0-7.162-2.93-7.162-7.324 0-4.315 3.066-7.266 7.162-7.266 3.205 0 5.5 1.766 6.41 3.975l-2.73.762c-.633-1.084-1.84-2.108-3.799-2.108-2.552 0-4.273 1.847-4.273 4.657 0 2.87 1.82 4.676 4.253 4.676 1.96 0 3.344-1.044 3.996-2.45l2.712.724zm10.697-1.765h-6.093v5.859h-2.75V29.582h2.75v5.499h6.093v-5.5h2.75V43.63h-2.75v-5.86z" />
+                </svg></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="toprate">
+        <div class="container toprate__container">
+          <div class="toprate__column">
+            <div class="toprate__column-header">
+              <h3 class="toprate__title section-title">Computer </h3>
+              <a href="#" class="toprate__link">Viem All</a>
+            </div>
+            <div class="toprate__inner">
+              <div class="toprate__product product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/bestseller/product1.jpg" alt="Product 1">
+                  <h3 class="product__title">Note10 5.0 Inch Full Screen Smartphone 8 Core 4GB</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$199.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <ul class="toprate__list">
+                <li class="toprate__item ">
+                  <a href="#" class="toprate__product product-mini">
+                    <img src="img/toprate/product-mini2.jpg" alt="#" class="product-mini__img">
+                    <div class="product-mini__content">
+                      <h3 class="product-mini__title">Ultra Wireless S50 Headphones</h3>
+                      <p class="product-mini__price">$23.00</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="toprate__item ">
+                  <a href="#" class="toprate__product product-mini">
+                    <img src="img/toprate/product-mini3.jpg" alt="#" class="product-mini__img">
+                    <div class="product-mini__content">
+                      <h3 class="product-mini__title">Sony Xperia XZs G8232 Quad Core</h3>
+                      <p class="product-mini__price">$190.00</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="toprate__item ">
+                  <a href="#" class="toprate__product product-mini">
+                    <img src="img/toprate/product-mini4.jpg" alt="#" class="product-mini__img">
+                    <div class="product-mini__content">
+                      <h3 class="product-mini__title">3.5mm In-ear Stereo Earbuds Earphone</h3>
+                      <p class="product-mini__price">$18.00</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="toprate__column">
+            <div class="toprate__column-header">
+              <h3 class="toprate__title section-title">Kitchen Machine</h3>
+              <a href="#" class="toprate__link">Viem All</a>
+            </div>
+            <div class="toprate__inner">
+              <div class="toprate__product product">
+                <div class="product__top">
+                  <a href="#" class="product__tag">Phone</a>
+                </div>
+                <a href="#" class="product__inner">
+                  <img src="img/toprate/Product.jpg" alt="Product 1">
+                  <h3 class="product__title">400W Electric Coffee Grinder Salt Pepper</h3>
+                </a>
+                <div class="product__info">
+                  <p class="product__price">$199.00</p>
+                  <div class="product__rating">Рейтинг</div>
+                </div>
+                <div class="product__bottom">
+                  <button class="btn-reset product__btn product__btn-comparison"></button>
+                  <button class="btn-reset product__btn-add">add to cart</button>
+                  <button class="btn-reset product__btn product__btn-favorite"></button>
+                </div>
+              </div>
+              <ul class="toprate__list">
+                <li class="toprate__item ">
+                  <a href="#" class="toprate__product product-mini">
+                    <img src="img/toprate/product-mini5.jpg" alt="#" class="product-mini__img">
+                    <div class="product-mini__content">
+                      <h3 class="product-mini__title">Silicone Turners Gadgets Kitchen Tools</h3>
+                      <p class="product-mini__price">$518.00</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="toprate__item ">
+                  <a href="#" class="toprate__product product-mini">
+                    <img src="img/toprate/product-mini.jpg" alt="#" class="product-mini__img">
+                    <div class="product-mini__content">
+                      <h3 class="product-mini__title">Magic Bullet Blender, Small, Silver</h3>
+                      <p class="product-mini__price">$518.00</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="toprate__item ">
+                  <a href="#" class="toprate__product product-mini">
+                    <img src="img/toprate/product-mini6.jpg" alt="#" class="product-mini__img">
+                    <div class="product-mini__content">
+                      <h3 class="product-mini__title">Knife Sharpener 3 Stages Professional Kitchen</h3>
+                      <p class="product-mini__price">$518.00</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="discount">
+        <div class="container discount__container">
+          <div class="discount__text">
+            Discount 40% on your first payment when paying with <a href="#" class="discount__link">American Express Bank</a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer__container">
+        <div class="footer__col">
+          <a href="#" class="logo footer__logo">
+            <img src="img/header/logo.png" alt="logo">
+          </a>
+          <p class="footer__text">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+          </p>
+          <ul class="social">
+            <li class="social__item">
+              <a href="#" class="social__link social__link--facebook" aria-label="Go to Facebook">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                  <path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--tw" aria-label="Go to Twitter">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--rss" aria-label="Go to RSS">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="rss" class="svg-inline--fa fa-rss fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path fill="currentColor" d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"></path>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--skype" aria-label="Go to Skype">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="skype" class="svg-inline--fa fa-skype fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path fill="currentColor" d="M424.7 299.8c2.9-14 4.7-28.9 4.7-43.8 0-113.5-91.9-205.3-205.3-205.3-14.9 0-29.7 1.7-43.8 4.7C161.3 40.7 137.7 32 112 32 50.2 32 0 82.2 0 144c0 25.7 8.7 49.3 23.3 68.2-2.9 14-4.7 28.9-4.7 43.8 0 113.5 91.9 205.3 205.3 205.3 14.9 0 29.7-1.7 43.8-4.7 19 14.6 42.6 23.3 68.2 23.3 61.8 0 112-50.2 112-112 .1-25.6-8.6-49.2-23.2-68.1zm-194.6 91.5c-65.6 0-120.5-29.2-120.5-65 0-16 9-30.6 29.5-30.6 31.2 0 34.1 44.9 88.1 44.9 25.7 0 42.3-11.4 42.3-26.3 0-18.7-16-21.6-42-28-62.5-15.4-117.8-22-117.8-87.2 0-59.2 58.6-81.1 109.1-81.1 55.1 0 110.8 21.9 110.8 55.4 0 16.9-11.4 31.8-30.3 31.8-28.3 0-29.2-33.5-75-33.5-25.7 0-42 7-42 22.5 0 19.8 20.8 21.8 69.1 33 41.4 9.3 90.7 26.8 90.7 77.6 0 59.1-57.1 86.5-112 86.5z"></path>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--pinterest" aria-label="Go to Pinterest">
+
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="pinterest-p" class="svg-inline--fa fa-pinterest-p fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                  <path fill="currentColor" d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z">
+
+                  </path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col block-info">
+          <h4 class="block-info__title">Information</h4>
+          <ul class="block-info__list">
+            <li class="block-info__item">
+              <a href="#" class="block-info__link">About Us</a>
+            </li>
+            <li class="block-info__item">
+              <a href="#" class="block-info__link">Delivery Information</a>
+            </li>
+            <li class="block-info__item">
+              <a href="#" class="block-info__link">Privacy Policy</a>
+            </li>
+            <li class="block-info__item">
+              <a href="#" class="block-info__link">Terms & Conditions</a>
+            </li>
+            <li class="block-info__item">
+              <a href="#" class="block-info__link">Return Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col block-info">
+          <h4 class="block-info__title">My account</h4>
+          <ul class="block-info__list">
+            <li class="block-info__item">
+              <a href="#" class="block-info__link">My Account</a>
+            </li>
+            <li class="block-info__item">
+              <a href="#" class="block-info__link">Shopping Cart</a>
+            </li>
+            <li class="block-info__item">
+              <a href="#" class="block-info__link">Wishlist</a>
+            </li>
+            <li class="block-info__item">
+              <a href="#" class="block-info__link">Order History</a>
+            </li>
+            <li class="block-info__item">
+              <a href="#" class="block-info__link">International Orders</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col block-info">
+          <h4 class="block-info__title">Contact Us</h4>
+          <div class="block-info__box block-address">
+            <h5 class="block-address__title">Address:</h5>
+            <p class="block-address__text">1429 Netus Rd, NY 48247</p>
+          </div>
+          <div class="block-info__box block-link">
+            <h4 class="block-link__title">Email:</h4>
+            <a href="maito:Info.deercreative@gmail.com" class="block-link__info" aria-label="Mail to Info.deercreative@gmail.com">Info.deercreative@gmail.com</a>
+          </div>
+          <div class="block-info__box block-link">
+            <h4 class="block-link__title">Phone:</h4>
+            <a href="tel:+8748864174" class="block-link__info" aria-label="Call to 8748864174">+87488-64-174</a>
+          </div>
+          <div class="payment">
+            <h5 class="payment__title">Payment Accepted</h5>
+            <ul class="payment__list">
+              <li class="payment__item">
+                <img class="payment__icon" src="img/footer/visa.png" alt="Visa">
+              </li>
+              <li class="payment__item">
+                <img class="payment__icon" src="img/footer/mastercard.png" alt="Master Card">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-bottom__container">
+            <p class="copyright">Copyright © 2021 <a href="#" class="copyright__link">Maroni</a> Inc. All rights reserved.</p>
+            <ul class="footer-nav">
+              <li class="footer-nav__item"><a href="#" class="footer-nav__link">Privacy Policy</a></li>
+              <li class="footer-nav__item"><a href="#" class="footer-nav__link">Term of Use</a></li>
+              <li class="footer-nav__item"><a href="#" class="footer-nav__link">Sales and Refunds</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/ion.rangeSlider.min.js"></script>
+<script src="js/jquery.rateyo.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
