@@ -883,7 +883,7 @@
   width: 15px;
   height: 12px;
   transform: translateY(-50%);
-  background-image: url("/img/icons/shopping-cart-light.svg");
+  background-image: url("../img/icons/shopping-cart-light.svg");
   background-repeat: no-repeat;
 }
 .product__btn-add:hover {
