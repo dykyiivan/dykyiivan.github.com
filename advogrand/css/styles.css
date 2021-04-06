@@ -1058,6 +1058,9 @@ ul.tariff-package__list span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .contact__body {
@@ -1067,17 +1070,7 @@ ul.tariff-package__list span {
       -ms-flex-order: 1;
           order: 1;
   background-color: #fff;
-}
-
-.contact__body:after {
-  position: absolute;
-  top: 0;
-  right: -150%;
-  display: block;
-  height: 100%;
-  width: 150%;
-  background: #fff;
-  content: "";
+  width: 100%;
 }
 
 .contact__title {
