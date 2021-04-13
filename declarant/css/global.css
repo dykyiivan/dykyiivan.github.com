@@ -1,0 +1,154 @@
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --accent-color: #03BCFC;
+  --dark-gray: #4F4F4F;
+  --ligth-gray: #c4c4c4;
+  --gray-color: #bdbdbd; }
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url("../fonts/FiraSans-Regular.woff2") format("woff2"), url("../fonts/FiraSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+*::-moz-placeholder {
+  color: #C4C4C4; }
+
+*:-ms-input-placeholder {
+  color: #C4C4C4; }
+
+*::placeholder {
+  color: #C4C4C4; }
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: var(--color-white);
+  color: var(--dark-gray); }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+.is-outer {
+  position: relative !important;
+  left: -9999px !important; }
+
+.site-container {
+  overflow: hidden; }
+
+.is-hidden {
+  display: none !important; }
+
+.error {
+  border: 2px #ff4019 solid !important; }
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer; }
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1320px; }
+
+.container-wide {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1455px; }
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none; }
+
+.title {
+  font-family: 'Fira Sans', sans-serif;
+  color: var(--dark-color);
+  font-size: 35px;
+  line-height: 42px;
+  font-weight: 400; }
+
+.btn-bg {
+  min-width: 220px;
+  min-height: 65px;
+  padding: 20px 10px;
+  border-radius: 7px;
+  background-color: var(--accent-color);
+  color: var(--color-white);
+  font-size: 16px;
+  line-height: 19.5px;
+  font-weight: 500;
+  transition: all .4s; }
+  .btn-bg:hover {
+    background: linear-gradient(180deg, #03BCFC 11.94%, #0393FC 100%); }
+  .btn-bg:active {
+    background: #078FF2; }
+
+.btn {
+  min-width: 220px;
+  min-height: 65px;
+  padding: 20px 10px;
+  border-radius: 7px;
+  border: 1px solid var(--accent-color);
+  transition: all .4s; }
+  .btn:hover {
+    background: var(--accent-color);
+    color: var(--color-white); }
+  .btn:active {
+    background: #078FF2; }
