@@ -1,0 +1,48 @@
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 42px;
+  color: #000000;
+}
+.product-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+.btn-reset {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.list-reset {
+  list-style: none;
+  padding: 0;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.shop-now__btn {
+  padding: 12px 28px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: var(--accent-color);
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  border-radius: 20px;
+  @include transition;
+  &:hover {
+    background-color: #dd9937;
+  }
+}
