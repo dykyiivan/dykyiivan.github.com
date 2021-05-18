@@ -1,0 +1,213 @@
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-accent: #EDB50A;
+  --color-gray: #878787;
+  --dove-gray: #727272;
+  --color-dark: #222222; }
+
+@font-face {
+  font-family: 'Barlow';
+  src: url("../fonts/Barlow-Medium.woff2") format("woff2"), url("../fonts/Barlow-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Barlow';
+  src: url("../fonts/Barlow-SemiBold.woff2") format("woff2"), url("../fonts/Barlow-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Barlow';
+  src: url("../fonts/Barlow-Bold.woff2") format("woff2"), url("Barlow-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Barlow';
+  src: url("../fonts/Barlow-Regular.woff2") format("woff2"), url("../fonts/Barlow-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+*::-moz-placeholder {
+  color: #383838;
+  font-size: 26px;
+  line-height: 24px; }
+
+*:-ms-input-placeholder {
+  color: #383838;
+  font-size: 26px;
+  line-height: 24px; }
+
+*::placeholder {
+  color: #383838;
+  font-size: 26px;
+  line-height: 24px; }
+
+body {
+  font-family: "Barlow", sans-serif;
+  background-color: var(--color-white);
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+img,
+picture {
+  max-width: 100%;
+  display: block; }
+
+a {
+  text-decoration: none; }
+
+.is-outer {
+  position: relative !important;
+  left: -9999px !important; }
+
+.is-hidden {
+  display: none !important; }
+
+.for-mobile {
+  display: none; }
+  @media (max-width: 768px) {
+    .for-mobile {
+      display: block; } }
+
+.error {
+  border: 2px #ff4019 solid !important; }
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto; }
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+
+.btn-reset {
+  border: none;
+  background: transparent;
+  cursor: pointer; }
+
+.title {
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 53px;
+  color: #000000; }
+
+.subtitle {
+  font-size: 16px;
+  line-height: 19px;
+  color: #878787; }
+
+.btn {
+  position: relative;
+  padding: 17px 57px 17px 23px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out; }
+  .btn::after {
+    content: "";
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 23px;
+    height: 8px;
+    background-image: url("../img/arrow-white.svg"); }
+
+.btn-more--line {
+  position: relative;
+  padding: 17px 57px 17px 23px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+  border: 2px solid #e3e0e0;
+  border-radius: 1px;
+  transition: all 0.4s ease-in-out; }
+  .btn-more--line::after {
+    content: "";
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 23px;
+    height: 8px;
+    background-image: url("../img/arrow-yellow.svg"); }
+  .btn-more--line:hover {
+    background-color: #f6f6f6; }
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1030px; }
+
+.container-wide {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1830px; }
+
+.container-narrow {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1300px; }
+
+.container-fluid {
+  max-width: 1920px;
+  margin: 0 auto; }

@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New site</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-top">
+      <div class="container-wide header-top__container">
+        <div class="header-top__column header-info">
+          <a href="#" class="header-info__link">Latest Updates</a>
+          <span class="header-info__text">Get Up to 45% Off The Best Constructions Equipment Deals At Antek</span>
+        </div>
+        <div class="header-top__column header-top__right">
+          <div class="schedule">
+            <p class="schedule__text">Mon - Sat 9.00 - 18.00</p>
+          </div>
+          <div class="account header-account">
+            <a href="#" class="login account__link">Login</a>
+            <span class="separator">or</span>
+            <a href="#" class="register account__link">Register</a>
+          </div>
+          <ul class="social header__social">
+            <li class="social__item">
+              <a href="#" class="social__link social__link--twitter" aria-label="Go to Twitter"></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--facebook" aria-label="Go to Facebook"></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--google" aria-label="Go to Google"></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--youtube" aria-label="Go to YouTube"></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--pinterest" aria-label="Go to Pinterest"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container-wide header-bottom__container">
+        <div class="header-bottom__column header-bottom__column--left">
+          <a href="#" class="logo header__logo">
+            <img src="img/logo.svg" alt="Logo">
+          </a>
+          <div class="support header__support">
+            <span class="support__text">Get Quick Support</span>
+            <a href="tel:2367995500" class="support__link">236-799-5500</a>
+          </div>
+        </div>
+        <div class="header-bottom__column--right">
+          <div class="header__burger">
+            <span></span>
+          </div>
+          <nav class="menu header__menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link menu__link--active">Home</a>
+              </li>
+              <li class="menu__item dropdown">
+                <a href="#" class="menu__link ">Equipments</a>
+                <ul class="menu-dropdown">
+                  <li class="menu-dropdown__item">
+                    <a href="#" class="menu-dropdown__link">Excavators</a>
+                  </li>
+                  <li class="menu-dropdown__item">
+                    <a href="#" class="menu-dropdown__link">Scissor Lift</a>
+                  </li>
+                  <li class="menu-dropdown__item">
+                    <a href="#" class="menu-dropdown__link">Forklift</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Rental Deals</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">About</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">News</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="search search-btn">
+          </button>
+          <button class="cart">
+            <svg>
+              <use xlink:href="img/sprite.svg#cart"></use>
+            </svg>
+            <span class="cart__count">2</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero" style="background-image: url(img/hero-img.jpg);">
+      <div class="container-fluid">
+        <div class="hero__content">
+          <img class="hero__icon" src="img/hero-icons.png" alt="hero icon">
+          <span class="hero__subtitle">Top-Of-The-Line Equipment Ready At Flexible Rates Around</span>
+          <h1 class="hero__title">Your One-Stop Source For All Equipment Rental Needs</h1>
+        </div>
+      </div>
+    </section>
+    <section class="find-form">
+      <div class="container">
+        <div class="find-form__inner">
+          <h2 class="find-form__title">Find The Right Equipment</h2>
+          <form action="#" class="form-configuration">
+            <div class="form-group">
+              <div class="form-group__wrap form-group--cat">
+                <select class="form-configuration__input form-configuration__select">
+                  <option class="form-configuration__option" value="#" disabled selected hidden>Select Category</option>
+                  <option class="form-configuration__option" value="cat1">Category 1</option>
+                  <option class="form-configuration__option" value="cat1">Category 2</option>
+                </select>
+              </div>
+              <div class="form-group__wrap form-group--equip">
+                <input type="text" class="form-configuration__input " placeholder="Equipment Name">
+              </div>
+              <div class="form-group__wrap form-group--loc">
+                <input type="text" class="form-configuration__input " placeholder="What’s Your Location?">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-group__wrap form-group--date">
+                <input type="text" class="form-configuration__input form-configuration__input--datepicker" id="datepicker" placeholder="Rental Duration Period">
+              </div>
+              <div class="form-group__wrap">
+                <div class="form-configuration__input form-radio">
+                  <div class="radio">
+                    <input class="form-radio__input" type="radio" name="delivery" id="radio_1">
+                    <label class="form-radio__label" for="radio_1">Antek Delivery</label>
+                  </div>
+                  <div class="radio">
+                    <input class="form-radio__input" type="radio" name="delivery" id="radio_2">
+                    <label class="form-radio__label" for="radio_2">Self Pickup</label>
+                  </div>
+                </div>
+              </div>
+              <button class="btn-reset form-configuration__btn">Find My Rentals</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="browse-cat">
+      <div class="container browse-cat__container">
+        <span class="browse-cat__subtitle">We Promise To Find Tou The Right Equipment</span>
+        <h2 class="browse-cat__title title">Browse Machinery Categories</h2>
+        <div class="browse-cat__inner">
+          <a class="browse-cat__item cat" href="#">
+            <div class="cat__img-inner">
+              <img class="cat__img" src="img/img1.jpg" alt="#">
+            </div>
+            <h3 class="cat__name">Excavators</h3>
+          </a>
+          <a class="browse-cat__item cat" href="#">
+            <div class="cat__img-inner">
+              <img class="cat__img" src="img/img1.jpg" alt="#">
+            </div>
+            <h3 class="cat__name">Scissor lift</h3>
+          </a>
+          <a class="browse-cat__item cat" href="#">
+            <div class="cat__img-inner">
+              <img class="cat__img" src="img/img1.jpg" alt="#">
+            </div>
+            <h3 class="cat__name">Forklift</h3>
+          </a>
+          <a class="browse-cat__item cat" href="#">
+            <div class="cat__img-inner">
+              <img class="cat__img" src="img/img1.jpg" alt="#">
+            </div>
+            <h3 class="cat__name">Compaction roller</h3>
+          </a>
+          <a class="browse-cat__item cat" href="#">
+            <div class="cat__img-inner">
+              <img class="cat__img" src="img/img1.jpg" alt="#">
+            </div>
+            <h3 class="cat__name">Site Dumpers</h3>
+          </a>
+          <a class="browse-cat__item cat" href="#">
+            <div class="cat__img-inner">
+              <img class="cat__img" src="img/img1.jpg" alt="#">
+            </div>
+            <h3 class="cat__name">All types containers</h3>
+          </a>
+        </div>
+        <button class="btn-reset btn-more--line">More Categories </button>
+      </div>
+    </section>
+    <section class="counter">
+      <div class="container-narrow counter__container">
+        <div class="counter-item">
+          <div class="counter-item__top">
+            <span class="counter-item__num" data-counter-time="3000" data-counter-delay="50">3.4</span>
+            <span class="counter-item__num--symbol">k</span>
+            <img class="counter-item__icon" src="img/tools.svg" alt="#">
+          </div>
+          <h5 class="counter-item__title">Helping Projects Done</h5>
+          <p class="counter-item__text">
+            Best thing about Antek is to earn some axtra revenue on their equipments.
+          </p>
+        </div>
+        <div class="counter-item">
+          <div class="counter-item__top">
+            <span class="counter-item__num" data-counter-time="3000" data-counter-delay="50">25</span>
+            <span class="counter-item__num--symbol">+</span>
+            <img class="counter-item__icon" src="img/worker.svg" alt="#">
+          </div>
+          <h5 class="counter-item__title">Years In Rent Business</h5>
+          <p class="counter-item__text">
+            Best thing about Antek is to earn some axtra revenue on their equipments.
+          </p>
+        </div>
+        <div class="counter-item">
+          <div class="counter-item__top">
+            <span class="counter-item__num" data-counter-time="3000" data-counter-delay="50">18</span>
+            <span class="counter-item__num--symbol">+</span>
+            <img class="counter-item__icon" src="img/bulldozer.svg" alt="#">
+          </div>
+          <h5 class="counter-item__title">Received Awards So far</h5>
+          <p class="counter-item__text">
+            Best thing about Antek is to earn some axtra revenue on their equipments.
+          </p>
+        </div>
+        <div class="counter-item">
+          <div class="counter-item__top">
+            <span class="counter-item__num" data-counter-time="3000" data-counter-delay="50">
+              5.9
+            </span>
+            <span class="counter-item__num--symbol">%</span>
+            <img class="counter-item__icon" src="img/real-estate.svg" alt="#">
+          </div>
+          <h5 class="counter-item__title">Earned Revenue This Year</h5>
+          <p class="counter-item__text">
+            Best thing about Antek is to earn some axtra revenue on their equipments.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="offer">
+      <div class="container-narrow offer__container">
+        <div class="offer-left">
+          <div class="offer__images">
+            <img class="offer__img" src="img/offer-img.jpg" alt="#">
+            <div class="offer__images--small">
+              <img class="offer__img--small" src="img/offer-img2.jpg" alt="#">
+            </div>
+            <div class="offer__logo">
+              <svg width="43" height="59" viewbox="0 0 43 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.03947 32.0185C1.71969 26.6883 1.52486 20.6084 3.49785 15.1163C5.47083 9.62416 9.45002 5.16972 14.56 2.7329C19.67 0.296071 25.4923 0.0764655 30.7459 2.12239C35.9996 4.16832 40.2543 8.31218 42.5741 13.6424L35.5 15.1163C33.5 12 31.5769 10.6709 28.1538 9.3379C24.7308 8.00486 20.9372 8.14794 17.6077 9.73568C14.2783 11.3234 11.6856 14.2258 10.4001 17.8042C9.11454 21.3827 8.5 23.5 9.17603 27.2811L4.03947 32.0185Z" fill="white" />
+                <path d="M21.6124 10.8577L24.5705 15.6833L6.49388 56.6977L0.622533 56.6977L21.6124 10.8577Z" fill="white" />
+                <path d="M18.148 19.0781L24.3304 15.2995L32.9522 31.3669L25.556 31.3819L18.148 19.0781Z" fill="white" />
+                <path d="M11.3991 33.2343C11.4612 36.2023 12.5982 39.0627 14.6303 41.3633C16.6624 43.6638 19.4737 45.2732 22.6195 45.9369C25.7654 46.6006 29.0663 46.2807 32.0003 45.0279C34.9342 43.7751 41.1085 38.7995 42.5942 36.158L32.9169 36.2306C32.1111 37.6632 30.8097 38.8099 29.2184 39.4894C27.6272 40.1688 25.837 40.3423 24.1308 39.9824C22.4247 39.6224 20.9 38.7496 19.7979 37.5019C18.6958 36.2542 17.0337 34.1098 17 32.5001L11.3991 33.2343Z" fill="white" />
+                <path d="M28.7614 47.6536H35.9457L40.1366 56.7017H32.3535L28.7614 47.6536Z" fill="white" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="offer-right">
+          <span class="offer__subtitle">Abour Antek Equipments Rental</span>
+          <h2 class="title offer__title">We&nbsp;Offer Smarter &amp;&nbsp;More Affordable Access To&nbsp;Rent Construction Equipment</h2>
+          <p class="offer__text">
+            Aiusmod tempor inciddunt ut labore sed dolore magna aliquay dnim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea reprehen deritin voluptate.
+          </p>
+          <div class="offer-info">
+            <div class="offer-info__col">
+              <div class="offer-info__title">
+                The Facilities Less Expencisive
+              </div>
+              <div class="offer-info__text">
+                Velit esse cillum dolore ipsum eu flugiat nulla pariatur.
+              </div>
+            </div>
+            <div class="offer-info__col">
+              <div class="offer-info__title">
+                Innovating The Heavy Fleets
+              </div>
+              <div class="offer-info__text">
+                Excepteur sint occaecat cupidat non prodient sunt iny.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="steps">
+      <div class="container-narrow">
+        <span class="subtitle steps__subtitle">We Promise To Find You The Right Equipment</span>
+        <h3 class="title steps__title">Get Your Rentals In Easy Steps</h3>
+        <div class="steps__inner">
+          <div class="steps__top step">
+            <div class="step-top">
+              <img class="step-top__img" src="img/step-img1.svg" alt="#">
+            </div>
+            <div class="step-top">
+              <img class="step-top__img" src="img/step-img2.svg" alt="#">
+            </div>
+            <div class="step-top">
+              <img class="step-top__img" src="img/step-img3.svg" alt="#">
+            </div>
+            <div class="step-top">
+              <img class="step-top__img" src="img/step-img4.svg" alt="#">
+            </div>
+          </div>
+          <div class="steps__bottom step">
+            <div class="step-bottom step-bottom--first">
+              <h4 class="step-bottom__title">SEARCH YOUR EQUIPMENT</h4>
+            </div>
+            <div class="step-bottom step-bottom--second">
+              <h4 class="step-bottom__title">COMPARE YOUR SELECTION</h4>
+            </div>
+            <div class="step-bottom step-bottom--third">
+              <h4 class="step-bottom__title">RESERVE THE EQUIPMENT</h4>
+            </div>
+            <div class="step-bottom step-bottom--fourth">
+              <h4 class="step-bottom__title">GET START YOUR PROJECT</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="get-started" style="background-image: url(img/yellow-bg.jpg);">
+      <div class="container-narrow get-started__container">
+        <div class="get-started__left">
+          <img class="get-started__icon" src="img/bulldozer1.svg" alt="#">
+          <h3 class="get-started__title">
+            We Help Industry To Utilize The Heavy Equipment Work Better
+          </h3>
+        </div>
+        <div class="get-started__right">
+          <div class="get-started__phone quick-support">
+            <img class="quick-support__icon" src="img/call-us.svg" alt="#">
+            <div class="quick-support__content">
+              <span class="quick-support__text">Get Quick Support</span>
+              <a href="tel:+2367995500" class="quick-support__link">236-799-550</a>
+            </div>
+          </div>
+          <button class="btn-reset get-started__btn btn">Get Stated</button>
+        </div>
+      </div>
+    </section>
+    <section class="deals">
+      <div class="container-narrow deals__container">
+        <div class="deals__col deals__col--icon icons">
+          <div class="icons__item">
+            <div class="icons__icon">
+              <img src="img/deal-icon1.svg" alt="#">
+            </div>
+            <div class="icons__title">
+              Rent Quality Equipment
+            </div>
+          </div>
+          <div class="icons__item">
+            <div class="icons__icon">
+              <img src="img/deal-icon2.svg" alt="#">
+            </div>
+            <div class="icons__title">
+              Best Prices Gurantee
+            </div>
+          </div>
+          <div class="icons__item">
+            <div class="icons__icon">
+              <img src="img/deal-icon3.svg" alt="#">
+            </div>
+            <div class="icons__title">
+              Rent With Full Security
+            </div>
+          </div>
+          <div class="icons__item">
+            <div class="icons__icon">
+              <img src="img/deal-icon4.svg" alt="#">
+            </div>
+            <div class="icons__title">
+              Rent Quality Equipment
+            </div>
+          </div>
+        </div>
+        <div class="deals__col deals__col--content">
+          <span class="subtitle deals__subtitle">Why Choose Antek Equipment Rentals</span>
+          <h2 class="title deals__title">Over 15,000+ Rental Deals Antek Is The Choice</h2>
+          <p class="deals__text">Kiusmod tempor incididunt ut labore sed dolore magna aliqay enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea reprehen deritin voluptate.</p>
+          <ul class="deals__list">
+            <li class="deals__item">Nostrud exercitation ullamco laboris</li>
+            <li class="deals__item">Ut aliquip ex ea reprehen deritin voluptate</li>
+            <li class="deals__item">Adipisicing elit sed eiusmod tempor incididunt</li>
+            <li class="deals__item">Labore dolore magna aliqua veniam nostrud</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="parking">
+      <div class="container-narrow parking__container">
+        <div class="parking__images">
+          <img class="parking__img" src="img/parking-img.jpg" alt="#">
+        </div>
+        <div class="parking__content">
+          <h2 class="parking__title title">
+            Worried About The Idiling Equipment Parking At Yard?
+          </h2>
+          <p class="parking__text">
+            Start listing your equipment(s) with us today!
+          </p>
+          <button class="btn-reset parking__btn btn">Learn More</button>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container-narrow reviews__container">
+        <span class="subtitle reviews__subtitle">
+          We Promise To Find You The Right Equipment
+        </span>
+        <h2 class="title reviews__title">
+          Read Customers Thoughts
+        </h2>
+        <div class="reviews__inner">
+          <div class="reviews__item review">
+            <h3 class="review__title">
+              Satisfied With The Facilites At Antek Construction Equipment Rental
+            </h3>
+            <p class="review__text">
+              At dolore magna aliqua amt enim ad mini veniam quis ulamco aliquip commodo da consequat duis aute irue derit voluptate cillum dolore afugiat.
+            </p>
+            <div class="review__info">
+              <div class="review__user">
+                <img class="review__avatar" src="img/user1.jpg" alt="#">
+                <div class="review__author">
+                  Donald H. James
+                  <span class="review__author--position">Rental Customer</span>
+                </div>
+              </div>
+              <div class="review__rating"></div>
+            </div>
+          </div>
+          <div class="reviews__item review">
+            <h3 class="review__title">
+              Satisfied With The Facilites At Antek Construction Equipment Rental
+            </h3>
+            <p class="review__text">
+              At dolore magna aliqua amt enim ad mini veniam quis ulamco aliquip commodo da consequat duis aute irue derit voluptate cillum dolore afugiat.
+            </p>
+            <div class="review__info">
+              <div class="review__user">
+                <img class="review__avatar" src="img/user1.jpg" alt="#">
+                <div class="review__author">
+                  Donald H. James
+                  <span class="review__author--position">Rental Customer</span>
+                </div>
+              </div>
+              <div class="review__rating"></div>
+            </div>
+          </div>
+          <div class="reviews__item review">
+            <h3 class="review__title">
+              Satisfied With The Facilites At Antek Construction Equipment Rental
+            </h3>
+            <p class="review__text">
+              At dolore magna aliqua amt enim ad mini veniam quis ulamco aliquip commodo da consequat duis aute irue derit voluptate cillum dolore afugiat.
+            </p>
+            <div class="review__info">
+              <div class="review__user">
+                <img class="review__avatar" src="img/user1.jpg" alt="#">
+                <div class="review__author">
+                  Donald H. James
+                  <span class="review__author--position">Rental Customer</span>
+                </div>
+              </div>
+              <div class="review__rating"></div>
+            </div>
+          </div>
+          <div class="reviews__item review">
+            <h3 class="review__title">
+              Satisfied With The Facilites At Antek Construction Equipment Rental
+            </h3>
+            <p class="review__text">
+              At dolore magna aliqua amt enim ad mini veniam quis ulamco aliquip commodo da consequat duis aute irue derit voluptate cillum dolore afugiat.
+            </p>
+            <div class="review__info">
+              <div class="review__user">
+                <img class="review__avatar" src="img/user1.jpg" alt="#">
+                <div class="review__author">
+                  Donald H. James
+                  <span class="review__author--position">Rental Customer</span>
+                </div>
+              </div>
+              <div class="review__rating"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="latest-news">
+      <div class="container-narrow latest-news__container">
+        <div class="latest-news__top">
+          <div class="latest-news__info">
+            <span class="subtitle latest-news__subtitle">We Promise To Find You The Right Equipment</span>
+            <h2 class="title latest-news__title">Latest News & Updates</h2>
+          </div>
+          <button class="btn-reset btn latest-news__btn btn-more--line">View All News</button>
+        </div>
+        <div class="latest-news__inner">
+          <article class="latest-news__item blog-article">
+            <div class="blog-article__top">
+              <img class="blog-article__img" src="img/blog-article-img1.jpg" alt="#">
+              <a href="#" class="blog-article__cat">Construction</a>
+            </div>
+            <div class="blog-article__content">
+              <div class="blog-article__middle">
+                <div class="blog-article__info">
+                  <span class="blog-article__date">September 23</span>
+                  <div class="blog-article__author">By
+                    <a class="blog-article__author--link" href="#">
+                      Antek Admin
+                    </a>
+                  </div>
+                </div>
+                <a class="blog-article__title" href="#">
+                  Generator Components Which You Should Know
+                </a>
+                <p class="blog-article__text">
+                  Magna aliqua umt enimd mini venia quis ulamco aliquip commodo cons equat duis aute irue derit...
+                </p>
+              </div>
+              <div class="blog-article__bottom">
+                <a href="#" class="blog-article__read-more">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="latest-news__item blog-article">
+            <div class="blog-article__top">
+              <img class="blog-article__img" src="img/blog-article-img2.jpg" alt="#">
+              <a href="#" class="blog-article__cat">INSIGHTS</a>
+            </div>
+            <div class="blog-article__content">
+              <div class="blog-article__middle">
+                <div class="blog-article__info">
+                  <span class="blog-article__date">September 23</span>
+                  <div class="blog-article__author">By
+                    <a class="blog-article__author--link" href="#">
+                      Antek Admin
+                    </a>
+                  </div>
+                </div>
+                <a class="blog-article__title" href="#">
+                  Generator Components Which You Should Know
+                </a>
+                <p class="blog-article__text">
+                  Magna aliqua umt enimd mini venia quis ulamco aliquip commodo cons equat duis aute irue derit...
+                </p>
+              </div>
+              <div class="blog-article__bottom">
+                <a href="#" class="blog-article__read-more">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="latest-news__item blog-article">
+            <div class="blog-article__top">
+              <img class="blog-article__img" src="img/blog-article-img3.jpg" alt="#">
+              <a href="#" class="blog-article__cat">EQUIPMENT</a>
+            </div>
+            <div class="blog-article__content">
+              <div class="blog-article__middle">
+                <div class="blog-article__info">
+                  <span class="blog-article__date">September 23</span>
+                  <div class="blog-article__author">By
+                    <a class="blog-article__author--link" href="#">
+                      Antek Admin
+                    </a>
+                  </div>
+                </div>
+                <a class="blog-article__title" href="#">
+                  Generator Components Which You Should Know
+                </a>
+                <p class="blog-article__text">
+                  Magna aliqua umt enimd mini venia quis ulamco aliquip commodo cons equat duis aute irue derit...
+                </p>
+              </div>
+              <div class="blog-article__bottom">
+                <a href="#" class="blog-article__read-more">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container-narrow">
+      <div class="footer-top">
+        <a href="#" class="logo footer-logo">
+          <img src="img/logo-light.svg" alt="logo">
+        </a>
+        <div class="newsletter">
+          <div class="newsletter__inner">
+            <div class="newsletter__content">
+              <h3 class="newsletter__title">Newsletter Subscription</h3>
+              <p class="newsletter__text">Get Losted Deals from Antek Equipment Rentals</p>
+            </div>
+            <form class="newsletter__form subscribe">
+              <input class="subscribe__input" type="email" placeholder="Enter your email">
+              <button class="btn-reset subscribe__btn">SUBSCRIBE</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer__col">
+          <div class="widget">
+            <h3 class="widget__title">About Antek</h3>
+            <p class="widget__text">
+              Aiusmod tempor incididunt labore dnim ad minim venaim quis nostrsd exercitation ullamco.
+            </p>
+            <ul class="social social-dark">
+              <li class="social__item social-dark__item">
+                <a href="#" class="social__link social-dark__link social__link--twitter" aria-label="Go to Twitter"></a>
+              </li>
+              <li class="social__item social-dark__item">
+                <a href="#" class="social__link social-dark__link social__link--facebook" aria-label="Go to Facebook"></a>
+              </li>
+              <li class="social__item social-dark__item">
+                <a href="#" class="social__link social-dark__link social__link--google" aria-label="Go to Google"></a>
+              </li>
+              <li class="social__item social-dark__item">
+                <a href="#" class="social__link social-dark__link social__link--youtube" aria-label="Go to YouTube"></a>
+              </li>
+              <li class="social__item social-dark__item">
+                <a href="#" class="social__link social-dark__link social__link--pinterest" aria-label="Go to Pinterest"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__col">
+          <div class="widget">
+            <h3 class="widget__title">Useful Links</h3>
+            <ul class="widget__list">
+              <li class="widget__item">
+                <a href="#" class="widget__link">Latest News</a>
+              </li>
+              <li class="widget__item">
+                <a href="#" class="widget__link">Our Process</a>
+              </li>
+              <li class="widget__item">
+                <a href="#" class="widget__link">Terms & Conditions</a>
+              </li>
+              <li class="widget__item">
+                <a href="#" class="widget__link">About Antek Rental</a>
+              </li>
+              <li class="widget__item">
+                <a href="#" class="widget__link">Protections & Coverages</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__col">
+          <div class="widget">
+            <h3 class="widget__title">Explore Antek</h3>
+            <ul class="widget__list">
+              <li class="widget__item">
+                <a href="#" class="widget__link">Signup or Register</a>
+              </li>
+              <li class="widget__item">
+                <a href="#" class="widget__link">Get Equipments</a>
+              </li>
+              <li class="widget__item">
+                <a href="#" class="widget__link">Rental Pricing</a>
+              </li>
+              <li class="widget__item">
+                <a href="#" class="widget__link">Quick User Guide</a>
+              </li>
+              <li class="widget__item">
+                <a href="#" class="widget__link">Read FAQ’s</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__col">
+          <div class="widget">
+            <h3 class="widget__title">Get in touch</h3>
+            <ul class="contact">
+              <li class="contact__item contact__item--tel">
+                <span class="contact__descr">For Rental Support</span>
+                <a href="tel:+1(236)7995500" class="contact__link">+1(236)799 5500</a>
+              </li>
+              <li class="contact__item contact__item--schedule">
+                <span class="contact__descr">The Office Hours</span>
+                <p class="contact__link">Mon - Sat 8am to 6pm</p>
+              </li>
+              <li class="contact__item contact__item--email">
+                <span class="contact__descr">Send Us Email</span>
+                <a href="mailto:rentals@my-domain.net" class="contact__link">rentals@my-domain.net</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
