@@ -1,0 +1,198 @@
+:root {
+  --color-black: #000;
+  --color-white: #fff; }
+
+.custom-checkbox__field:checked + .custom-checkbox__content::after {
+  opacity: 1; }
+
+.custom-checkbox__field:focus + .custom-checkbox__content::before {
+  outline: 2px solid #f00;
+  outline-offset: 2px; }
+
+.custom-checkbox__field:disabled + .custom-checkbox__content {
+  opacity: 0.4;
+  pointer-events: none; }
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url("../fonts/PTSans-Regular.woff2") format("woff2"), url("../fonts/PTSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Inter';
+  src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Inter Extra';
+  src: url("../fonts/Inter-ExtraBold.woff2") format("woff2"), url("../fonts/Inter-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Inter';
+  src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Inter Semi';
+  src: url("../fonts/Inter-SemiBold.woff2") format("woff2"), url("../fonts/Inter-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Inter';
+  src: url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Inter';
+  src: url("../fonts/Inter-Black.woff2") format("woff2"), url("../fonts/Inter-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  color: var(--color-text);
+  font-size: 14px;
+  line-height: 22px; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+.lock {
+  overflow: hidden; }
+
+.is-outer {
+  position: relative !important;
+  left: -9999px !important; }
+
+.site-container {
+  overflow: hidden; }
+
+.is-hidden {
+  display: none !important; }
+
+.for-mobile {
+  display: none; }
+  @media (max-width: 768px) {
+    .for-mobile {
+      display: block; } }
+
+.error {
+  border: 2px #ff4019 solid !important; }
+
+.btn-reset {
+  border: none;
+  background: transparent;
+  cursor: pointer; }
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px; }
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none; }
+
+.btn {
+  border: none;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  padding: 10px; }
+
+.modal-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  z-index: 9999; }
+
+.modal {
+  background-color: #fff;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none; }
+
+.modal-overlay--visible {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease-in-out; }
+
+.modal--visible {
+  display: block; }
+
+.modal iframe {
+  width: 100%;
+  height: 100%; }
+
+.choices__inner {
+  padding: 5px 10px;
+  border-radius: 15px;
+  border: 1px solid #000;
+  background-color: #fff;
+  min-height: auto; }
+
+.is-open .choices__inner {
+  padding: 5px 10px;
+  border-radius: 15px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1px solid #000;
+  background-color: #fff;
+  min-height: auto; }
+
+.choices__list--dropdown {
+  border: 1px solid #000;
+  background-color: #fff; }
+
+.is-open .choices__list--dropdown {
+  border: 1px solid #000;
+  background-color: #fff;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px; }
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted:after {
+  display: none; }
